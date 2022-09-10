@@ -32,3 +32,5 @@ function signUp() {
 function searchInput(){
   document.getElementById("input-placeholdar").style.display = "none";
 }
+
+

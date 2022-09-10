@@ -550,10 +550,10 @@
 }
 .goals-inner h5 {
   font-size: 18px;
-    margin: 0 0 23px;
-    text-align: center;
-    color: #5d676e;
-    line-height: 1;
+  margin: 0 0 23px;
+  text-align: center;
+  color: #5d676e;
+  line-height: 1;
 }
 .goals .goals__container {
   display: flex;
@@ -576,7 +576,7 @@
 }
 .goals.goals--upper .goal {
   background-size: 65px auto !important;
-  background-color: #fff!important;
+  background-color: #fff !important;
   height: 84px;
   font-size: 16px;
   line-height: 24px;
@@ -589,7 +589,7 @@
   box-shadow: 0 3px 6px rgb(5 5 5 / 16%);
   font-size: 20px;
   color: #5d676e;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
   line-height: 30px;
   border-radius: 12px;
   margin-right: 48.5px;
@@ -599,12 +599,12 @@
   text-decoration: none;
 }
 
-.goals .goal>span {
+.goals .goal > span {
   font-weight: 700;
   display: block;
   max-width: 162px;
 }
-.goals.goals--upper .goal:nth-child(3)>span {
+.goals.goals--upper .goal:nth-child(3) > span {
   display: inline;
 }
 .goals .goal:hover {
@@ -614,4 +614,31 @@
 .goals .goal:hover span {
   color: #64b453;
   transition: ease-in 0.3s;
+}
+
+/* courses part start */
+.course-tab {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 15px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.my-course-tab .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #465159;
+  padding-bottom: 7px;
+}
+.my-course-tab .nav-link:hover {
+
+  color: #75bb39 !important;
+  border-bottom: 1px solid #75bb39;
+}
+.my-course-tab .nav-item.show .nav-link, .my-course-tab .nav-link.active {
+  color: #75bb39 !important;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
