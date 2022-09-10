@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font awosome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js link -->
+    <script src="app.js"></script>
+    <title>Alison</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mt-2" href="#"
+            ><img class="logo" src="img/logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex">
+              <input
+                class="form-control search-box"
+                type="search"
+                placeholder="What do you want to learn?"
+                aria-label="Search"
+              />
+              <button class="btn btn-search" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore Diplomas & Certificates
+                </a>
+                <div
+                  class="drop-down-box dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <h3>Course Types</h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="drop-box">
+                        <div class="row">
+                          <div class="col-lg-8 p-4">
+                            <h5 class="mb-2">Diploma Courses</h5>
+                            <a href="#" class="mb-1"
+                              >View all Diploma Courses <span>></span>
+                            </a>
+                          </div>
+                          <div class="col-lg-4">
+                            <img src="img/diploma-courses.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="drop-box">
+                        <div class="row">
+                          <div class="col-lg-8 p-4">
+                            <h5 class="mb-2">Certificate Courses</h5>
+                            <a href="#" class="mb-1"
+                              >View all Certificate Course<span>></span>
+                            </a>
+                          </div>
+                          <div class="col-lg-4">
+                            <img src="img/certificate-courses.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="mt-4">Course Categories</h3>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Discover Careers</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+
+                <ul
+                  class="dropdown-menu more-drop-main p-2"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse me-auto justify-content-end" id="navbarSupportedContent">
+            <li class="nav-item dollar-nav dropdown">
+              <a
+                class="nav-link "
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <span class="dollor-sign"><i class="fa-solid fa-dollar-sign"></i></span>
+              </a>
+
+              <ul class="dropdown-menu coin-drop" aria-labelledby="navbarDropdown">
+                <li>
+                   <div class="row">
+                    <div class="col-lg-6">
+                      <img src="img/not-affiliate.svg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                      <p>Become an Alison Affiliate in one click, and start earning money by sharing any page on the Alison website.</p>
+                      <button class="btn-aff">Become An Affiliate</button>
+                    </div>
+                   </div>
+                </li>
+                
+               
+              </ul>
+            </li>
+
+         
+
+            <button
+              type="button"
+              class="btn-login"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn-signUp"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Sign Up
+            </button>
+
+            <!-- Modal -->
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="my-modal modal-dialog-centered">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <button  type="button" class="btn-close close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header d-block  py-5">
+                      <h5 id="modal-title">Sign Up For Free</h5>
+                      <p id="modal-sub-msg">
+                        Join the World’s Largest Free Learning Community
+                      </p>
+                      <div class="modal-btn">
+                         <button id="signup-modal" onclick="signUp()">SignUp</button>
+                         <button id="login-modal" onclick="login()">Login</button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                        
+                      <div class="row">
+                        <div class="col-lg-6 px-5 py-2 ">
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/facebook-square.svg" alt="">
+                              <a href="#">Continue with Facebook</a>
+                             </div>
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/google-square.svg" alt="">
+                              <a href="#">Continue with Google</a>
+                             </div>
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/microsoft-square.svg" alt="">
+                              <a href="#">Continue with Microsoft</a>
+                             </div>
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/linkedin-square.svg" alt="">
+                              <a href="#">Continue with Linkedin</a>
+                             </div>
+                             <div id="yahoo-box" class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/yahoo-square.svg" alt="">
+                              <a href="#">Continue with Yahoo</a>
+                             </div>
+                             <p id="signup-bottom" class="signup-bottom">Already have an Alison account?<a href="#" class="btn-sm-bottom">Login</a> </p>
+                             <p  id="login-bottom" class="signup-bottom">Don't have an Alison account? <a href="#" class="btn-sm-bottom">Sign Up</a> </p>
+                        </div>
+                        <div class="col-lg-6 px-5 py-2">
+                            <div id="login-part">
+                              <p class="signup-text">This is the name that will appear on your Certification</p>
+                          <form action="">
+                            <div class="row ">
+                              <div class="col-lg-6"><input type="text" class="signup-input" placeholder="First name"></div>
+                              <div class="col-lg-6"><input type="text" placeholder="Surname" class="signup-input"></div>
+                            </div>
+                            </div>
+                            <input type="email" placeholder="Email" class="signup-input" name="" id="">
+                            <input type="password" placeholder="Password" class="signup-input" name="" id="">
+                            <label id="checkbox"  class="signup-check me-2 mb-5" >
+                              <input  type="checkbox"  > I agree to the Terms and Conditions
+
+                            </label>
+                            <label id="checkbox-1"  class="signup-check me-2 mb-5" >
+                              <input  type="checkbox" class="ms-2" >Keep me logged in
+
+                            </label>
+                            <a href="" id="f-pass">Forgot password?</a>
+                               <div class="sign-up-here">
+                                <img class="pointer-img" src="img/pointer.svg" alt="">
+                                <button id="main-signup-btn" class="main-sign-btn" type="submit">Sign Up</button>
+                               </div>
+                          </form>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="language">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link "
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-regular fa-globe"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item my-2" href="#"
+                      ><img
+                        class="me-2"
+                        style="width: 20px"
+                        src="img/en.svg"
+                        alt=""
+                      />English</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item my-2" href="#"
+                      ><img
+                        class="me-2"
+                        style="width: 20px"
+                        src="img/es.svg"
+                        alt=""
+                      />Spanish</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item my-2" href="#"
+                      ><img
+                        class="me-2"
+                        style="width: 20px"
+                        src="img/fr.svg"
+                        alt=""
+                      />French</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- intro section -->
+      <section>
+        <ul class="nav nav-pills mb-3 my-pill" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><svg class="icon icon-books"><use xlink:href="./SVG/my.svg#icon-books"></use></svg>Learn & Get Certificates</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg class="icon icon-suitcase"><use xlink:href="./SVG/symbol-defs.svg#icon-suitcase"></use></svg>Build Your Career</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><svg class="icon icon-currency-dollar"><use xlink:href="./SVG/dollor-coin.svg#icon-currency-dollar"></use></svg>Earn On Alison</button>
+          </li>
+        </ul>
+
+        <!-- landing page list -->
+        <div class="tab-content" id="pills-tabContent">
+
+          <!-- 1st landing page -->
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <section class="learnLandingPage">
+                        <section class="banner">
+                               <div class="container">
+                                 <div class="banner-text">
+                                  <h3>Free Online Courses With Certificates & Diplomas
+                                  </h3>
+                                  <input placeholder="What do you want to learn today?" class="banner-search" type="text">
+                                  <p>25 Million Learners. 15 Years. 100% Free Courses</p>
+                                 </div>
+                                 <div class="banner-img">
+                                 <div class="row text-center">
+                                  
+                                    <div class="col-lg-6 text-start">
+                                      <img src="img/header-left.svg" alt="">
+                                    </div>
+                                    <div class="col-lg-6 text-end">
+                                      <img src="img/header-right.svg" alt="">
+                                    </div>
+                                  </div>
+                                 </div>
+                               </div>
+                        </section>
+                        <!-- categories class -->
+                        <section class="categories">
+                          <div class="categories__bg"></div>
+                          <div class="container mx-auto text-center">
+                            <div class="category-class">
+                               <h2>Explore 4000+ Free Online Courses</h2>
+                               <div class="row text-center mx-auto">
+                                <div class="col-lg-3 col-sm-4">
+                                  <div class="category-box category-box-1 text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-4">
+                                  <div class="category-box text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-4">
+                                  <div class="category-box text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-4">
+                                  <div class="category-box text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                  <div class="category-box text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 my-lg"></div>
+                                <div class="col-lg-2 col-sm-4">
+                                  <div class="category-box  text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-4">
+                                  <div class="category-box  text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-4">
+                                  <div class="category-box  text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-sm-4">
+                                  <div class="category-box  text-center">
+                                     <img src="img/it-courses.svg" alt="">
+                                     <h3>IT</h3>
+                                     <a href="#">886 courses<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></a>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 my-lg"></div>
+                               </div>
+                            </div>
+                          </div>
+                              <div class="learning-counter">
+                                <p class="mb-0"><b>150,319 </b> people are learning on Alison today</p>
+                              </div>
+                              
+                        </section>
+                        <!-- goal section -->
+                        <div class="goals goals--upper">
+                          <div class="goals-inner text-center">
+                          <h2>Not Sure Where To Begin?</h2>
+                          <h5>What is your main goal on Alison?</h5>
+                          </div>
+                          <div class="goals__container">
+                            <a href="" class="goal">
+                          
+                            I want to <span>upskill  <svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></span> </a>
+                            <a href="" class="goal">
+                            I want to <span>change careers <svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></span> </a>
+                            <a href="" class="goal">
+                            I want to <span>explore <br> hobbies &amp; interests<svg class="icon icon-arrow-right2 ms-1"><use xlink:href="./SVG/right-arrow.svg#icon-arrow-right2"></use></svg></span> </a>
+                            </div>
+                          
+                          </div>
+                </section>
+
+                <section>
+                  
+                  
+                </section>
+          </div>
+
+          <!-- 2nd landing page -->
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+          <!-- 2nd landing page -->
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        </div>
+      </section>
+    </main>
+ 
+
+
+    <!-- bootstrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
