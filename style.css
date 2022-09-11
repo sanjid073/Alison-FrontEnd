@@ -633,12 +633,250 @@
   padding-bottom: 7px;
 }
 .my-course-tab .nav-link:hover {
-
   color: #75bb39 !important;
   border-bottom: 1px solid #75bb39;
 }
-.my-course-tab .nav-item.show .nav-link, .my-course-tab .nav-link.active {
+.my-course-tab .nav-item.show .nav-link,
+.my-course-tab .nav-link.active {
   color: #75bb39 !important;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.course-card .card {
+  width: 250px !important;
+  margin-right: 17px !important;
+}
+.course-card .card-body span {
+  font-size: 12px;
+  background: #2d3942;
+  display: inline-block;
+  margin: 0 0 15px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  transition: all 0.4s ease-in;
+}
+.course-card .card-body p {
+  font-size: 16px;
+  text-align: left;
+  color: #2d3942;
+  margin-bottom: 60px;
+}
+.course-card .card-body a {
+  width: 171px;
+  min-width: 171px;
+  background: #0091c7;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  display: block;
+}
+.card-info .course-block-intro {
+  background-color: #f2f2f2;
+  text-align: center;
+  width: 250px !important;
+  margin-right: 17px !important;
+}
+.card-info .course-block-intro {
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: #fff;
+    height: 80%;
+    width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-in;
+}
+.course-card .card:hover .card-info .course-block-intro{
+  opacity: 1;
+  cursor: pointer;
+}
+.card-info .course-block-intro .link-group {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  float: none;
+  display: block;
+  cursor: pointer;
+}
+.card-info .course-block-intro .link-group span.btn-facebook {
+  background-color: #3b5999;
+  padding-top: 8px;
+}
+.card-info .course-block-intro .link-group span {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0 4px;
+  background: #15212a;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #fff;
+  transition: all 0.3s ease-in;
+}
+.card-info .course-block-intro .link-group span.btn-twitter {
+  background-color: #0084ff;
+  padding-top: 8px;
+}
+.card-info .course-block-intro .link-group span.btn-linkedin {
+  background-color: #0077b5;
+  padding-top: 8px;
+  font-size: 16px;
+  padding-left: 2px;
+}
+.card-info .course-block-intro > a {
+  display: block;
+  text-decoration: none;
+  background: none;
+  width: 100%;
+}
+.card-info .course-block-intro h3,
+.card-info .course-block-intro h5 {
+  font-size: 0.9375em;
+  padding-top: 16px;
+  color: #2d3942;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-info .course-block-intro span{
+  background: none;
+}
+.card-info .course-block-intro .publisher {
+  color: #5d666d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 0.875em;
+}
+.card-info .course-block-intro .course-intro {
+  margin-bottom: 25px;
+  color: #2d3942;
+  font-size: 0.875em;
+}
+.card-info .course-block-intro .more-info {
+  color: #0094c9;
+  margin-top: -15px;
+  display: block;
+  cursor: pointer;
+}
+.my-slide .slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+
+  width: 48px !important;
+  height: 48px !important;
+  background-color: #fff;
+  color: #008ec3 !important;
+  border-radius: 100%;
+  border: 1px solid #008ec3;
+  padding: 5px;
+  font-weight: 700;
+}
+.my-slide .slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 32px !important;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.my-slide .slick-next {
+  right: 10px !important;
+}
+.my-slide{
+  margin-left: 30px;
+}
+.my-slide .slick-prev {
+  left: -55px !important;
+}
+.course-btn button{
+
+    padding: 12.5px 39px;
+    border-radius: 25px;
+    color: #fff;
+    background: #83c11f;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    border: 1px solid #83c11f;
+    overflow: hidden;
+    position: relative;
+
+}
+
+/* publisher section */
+.publishers {
+  background: #f3f6f7;
+  padding: 50px 0;
+  margin: 20px 0;
+}
+.publishers h2 {
+  color: #2d3941;
+  font-size: 20px;
+  margin-bottom: 33px;
+  font-weight: 500;
+  text-align: center;
+  opacity: .88;
+}
+.publishers img{
+   margin-bottom: 10px;
+}
+
+/* career section */
+.careers {
+  padding-top: 40px;
+}
+.careers .inner {
+  background: url(img/rocket.svg) top left no-repeat;
+}
+.careers h2{
+  color: #465159;
+  margin-bottom: 12px;
+  font-size: 36px;
+  line-height: 54px;
+}
+.careers p{
+  font-size: 16px;
+    line-height: 28px;
+    color: #646464;
+    margin-bottom: 37px;
+}
+.careers a {
+  text-decoration: none;
+  border: 1px solid #b3bdc0;
+  font-size: 16px;
+  color: #5d676e;
+  padding: 16px 24px 15px 22px;
+  border-radius: 26px;
+  display: inline-block;
+  margin-bottom: 16px;
+  transition: all .3s ease-in;
+  margin-right: 12px;
+  font-weight: 500;
+}
+.career-slide .slick-next {
+  right: 140px;
+}
+.view-more{
+  background: none;
+   border: none;
+   outline: none;
+    color: #83c11f !important;
+    font-weight: 700;
+    width: 146px;
+    display: block !important;
+    margin: 9px auto 46px;
+    transition: all .3s ease-in;
+
 }
