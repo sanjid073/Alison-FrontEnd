@@ -77,6 +77,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+.testimonials-card .slick-prev
+ {
+
+  margin-left: 45px !important;
+}
 .slick-prev
 {
     left: -25px;
