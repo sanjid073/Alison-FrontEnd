@@ -208,3 +208,6 @@
     opacity: .75;
     color: black;
 }
+.testimonials-slider{
+    width: 80% !important;
+}

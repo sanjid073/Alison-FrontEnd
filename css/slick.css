@@ -117,3 +117,8 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+.testimonials-slider{
+    width: 80% !important;
+}
