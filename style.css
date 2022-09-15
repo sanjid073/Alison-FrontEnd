@@ -1358,6 +1358,7 @@ footer {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    margin-left: 30px !important;
   }
   .publishers-hide {
     display: none !important;
@@ -1444,11 +1445,7 @@ footer {
     width: 100% !important;
     overflow: hidden !important;
   }
-  .testimonials .slick-slide {
-    width: 50vw !important;
-
-    box-sizing: border-box;
-  }
+  
   .testimonials-slider {
     width: 100%;
     overflow: visible;
