@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/dashboard.css">
+     <!-- bootstrap css cdn -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous"
+   />
+   <!-- font awosome cdn -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+ />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left side var content -->
+            <div class="col-lg-2">
+                <div class="left-side-bar">
+                     <div class="user-profile-info">
+                        <img src="./img/user-profile.png" alt="">
+                        <h4 class="user-name">Sanjid Mahi</h4>
+                        <a class="view-profile" href="#">View Profile</a>
+                        <h6 class="a-id">Alison ID: 26295917</h6>
+                     </div>
+                     <div class="left-nav-group">
+                        <div class="user-option ">
+                            <a href="dashboard.html"  class="left-nav-item nav-linkss" ><i class="fa-solid fa-circle-play me-2"></i> Continue Learning </a>
+                            <a  href="" id="left-nav-item1"  class="nav-linkss left-nav-item"><i class="fa-sharp fa-solid fa-heart me-2"></i> For You </a>
+                            <a  href="test.html"   class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i> Dashboard </a>
+                            <a  href="" id="left-nav-item2"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Resumé Builder </a>
+                            <a  href="" id="left-nav-item3"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Learner Report </a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <script>
+        document.querySelectorAll('.nav-linkss').forEach(link => {
+    if(link.href === window.location.href){
+      link.setAttribute('aria-current', 'page')
+    }
+  })
+      </script>
+</body>
+</html>

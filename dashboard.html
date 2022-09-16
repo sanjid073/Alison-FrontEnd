@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/dashboard.css">
+     <!-- bootstrap css cdn -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous"
+   />
+   <!-- font awosome cdn -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+ />
+ <!-- js link -->
+ <script src="./js/dashboard.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+
+      <!-- header -->
+    <header>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand mt-2" href="#"
+              ><img class="logo" src="img/logo.svg" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+  
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="d-flex">
+                <input
+                  class="form-control search-box"
+                  type="search"
+                  placeholder="What do you want to learn?"
+                  aria-label="Search"
+                />
+                <button class="btn btn-search" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Explore Diplomas & Certificates
+                  </a>
+                  <div
+                    class="drop-down-box dropdown-menu"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <h3>Course Types</h3>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="drop-box">
+                          <div class="row">
+                            <div class="col-lg-8 p-4">
+                              <h5 class="mb-2">Diploma Courses</h5>
+                              <a href="#" class="mb-1"
+                                >View all Diploma Courses <span>></span>
+                              </a>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="img/diploma-courses.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="drop-box">
+                          <div class="row">
+                            <div class="col-lg-8 p-4">
+                              <h5 class="mb-2">Certificate Courses</h5>
+                              <a href="#" class="mb-1"
+                                >View all Certificate Course<span>></span>
+                              </a>
+                            </div>
+                            <div class="col-lg-4">
+                              <img src="img/certificate-courses.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="mt-4">Course Categories</h3>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="drop-box-2 d-flex align-items-center p-4">
+                          <div><img src="img/it-courses.svg" alt="" /></div>
+                          <div class="ms-2">
+                            <h5 class="mb-0">IT</h5>
+                            <a href="#">886 Courses<span>></span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >Discover Careers</a
+                  >
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+  
+                  <ul
+                    class="dropdown-menu more-drop-main p-2"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <div class="more-drop d-flex align-items-center p-2">
+                      <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Workplace Personality Assessment</h5>
+                        <a href="#">Discover Your Strengths & Weaknesses</a>
+                      </div>
+                    </div>
+                    <div class="more-drop d-flex align-items-center p-2">
+                      <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Workplace Personality Assessment</h5>
+                        <a href="#">Discover Your Strengths & Weaknesses</a>
+                      </div>
+                    </div>
+                    <div class="more-drop d-flex align-items-center p-2">
+                      <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Workplace Personality Assessment</h5>
+                        <a href="#">Discover Your Strengths & Weaknesses</a>
+                      </div>
+                    </div>
+                    <div class="more-drop d-flex align-items-center p-2">
+                      <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Workplace Personality Assessment</h5>
+                        <a href="#">Discover Your Strengths & Weaknesses</a>
+                      </div>
+                    </div>
+                    <div class="more-drop d-flex align-items-center p-2">
+                      <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Workplace Personality Assessment</h5>
+                        <a href="#">Discover Your Strengths & Weaknesses</a>
+                      </div>
+                    </div>
+                    <div class="more-drop d-flex align-items-center p-2">
+                      <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                      <div class="ms-2">
+                        <h5 class="mb-0">Workplace Personality Assessment</h5>
+                        <a href="#">Discover Your Strengths & Weaknesses</a>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="collapse navbar-collapse me-auto justify-content-end" id="navbarSupportedContent">
+              <li class="nav-item dollar-nav dropdown">
+                <a
+                  class="nav-link "
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                <span class="dollor-sign"><i class="fa-solid fa-dollar-sign"></i></span>
+                </a>
+  
+                <ul class="dropdown-menu coin-drop" aria-labelledby="navbarDropdown">
+                  <li>
+                     <div class="row">
+                      <div class="col-lg-6">
+                        <img src="img/not-affiliate.svg" alt="">
+                      </div>
+                      <div class="col-lg-6">
+                        <p>Become an Alison Affiliate in one click, and start earning money by sharing any page on the Alison website.</p>
+                        <button class="btn-aff">Become An Affiliate</button>
+                      </div>
+                     </div>
+                  </li>
+                  
+                 
+                </ul>
+              </li>
+  
+           
+  
+              <button
+                type="button"
+                class="btn-login"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Login
+              </button>
+  
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn-signUp"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Sign Up
+              </button>
+  
+              <!-- Modal -->
+  
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="my-modal modal-dialog-centered">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <button  type="button" class="btn-close close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="modal-header d-block  py-5">
+                        <h5 id="modal-title">Sign Up For Free</h5>
+                        <p id="modal-sub-msg">
+                          Join the World’s Largest Free Learning Community
+                        </p>
+                        <div class="modal-btn">
+                           <button id="signup-modal" onclick="signUp()">SignUp</button>
+                           <button id="login-modal" onclick="login()">Login</button>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                          
+                        <div class="row">
+                          <div class="col-lg-6 px-5 py-2 ">
+                               <div class="s-media-box d-flex justify-content-center">
+                                <img class="me-2" src="img/facebook-square.svg" alt="">
+                                <a href="#">Continue with Facebook</a>
+                               </div>
+                               <div class="s-media-box d-flex justify-content-center">
+                                <img class="me-2" src="img/google-square.svg" alt="">
+                                <a href="#">Continue with Google</a>
+                               </div>
+                               <div class="s-media-box d-flex justify-content-center">
+                                <img class="me-2" src="img/microsoft-square.svg" alt="">
+                                <a href="#">Continue with Microsoft</a>
+                               </div>
+                               <div class="s-media-box d-flex justify-content-center">
+                                <img class="me-2" src="img/linkedin-square.svg" alt="">
+                                <a href="#">Continue with Linkedin</a>
+                               </div>
+                               <div id="yahoo-box" class="s-media-box d-flex justify-content-center">
+                                <img class="me-2" src="img/yahoo-square.svg" alt="">
+                                <a href="#">Continue with Yahoo</a>
+                               </div>
+                               <p id="signup-bottom" class="signup-bottom">Already have an Alison account?<a href="#" class="btn-sm-bottom">Login</a> </p>
+                               <p  id="login-bottom" class="signup-bottom">Don't have an Alison account? <a href="#" class="btn-sm-bottom">Sign Up</a> </p>
+                          </div>
+                          <div class="col-lg-6 px-5 py-2">
+                              <div id="login-part">
+                                <p class="signup-text">This is the name that will appear on your Certification</p>
+                            <form action="">
+                              <div class="row ">
+                                <div class="col-lg-6"><input type="text" class="signup-input" placeholder="First name"></div>
+                                <div class="col-lg-6"><input type="text" placeholder="Surname" class="signup-input"></div>
+                              </div>
+                              </div>
+                              <input type="email" placeholder="Email" class="signup-input" name="" id="">
+                              <input type="password" placeholder="Password" class="signup-input" name="" id="">
+                              <label id="checkbox"  class="signup-check me-2 mb-5" >
+                                <input  type="checkbox"  > I agree to the Terms and Conditions
+  
+                              </label>
+                              <label id="checkbox-1"  class="signup-check me-2 mb-5" >
+                                <input  type="checkbox" class="ms-2" >Keep me logged in
+  
+                              </label>
+                              <a href="" id="f-pass">Forgot password?</a>
+                                 <div class="sign-up-here">
+                                  <img class="pointer-img" src="img/pointer.svg" alt="">
+                                  <button id="main-signup-btn" class="main-sign-btn" type="submit">Sign Up</button>
+                                 </div>
+                            </form>
+                            
+                          </div>
+                        </div>
+  
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="language">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link "
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-regular fa-globe"></i>
+                  </a>
+  
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item my-2" href="#"
+                        ><img
+                          class="me-2"
+                          style="width: 20px"
+                          src="img/en.svg"
+                          alt=""
+                        />English</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item my-2" href="#"
+                        ><img
+                          class="me-2"
+                          style="width: 20px"
+                          src="img/es.svg"
+                          alt=""
+                        />Spanish</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item my-2" href="#"
+                        ><img
+                          class="me-2"
+                          style="width: 20px"
+                          src="img/fr.svg"
+                          alt=""
+                        />French</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- main section -->
+      <main>
+         <div class="container-fluid">
+            <div class="row bg">
+                <!-- left side var content -->
+                <div class="col-lg-2">
+                    <div class="left-side-bar">
+                         <div class="user-profile-info">
+                            <img src="./img/user-profile.png" alt="">
+                            <h4 class="user-name">Sanjid Mahi</h4>
+                            <a class="view-profile" href="#">View Profile</a>
+                            <h6 class="a-id">Alison ID: 26295917</h6>
+                         </div>
+                         <div class="left-nav-group">
+                            <div class="user-option ">
+                                <a href="#"  class="left-nav-item nav-linkss" ><i class="fa-solid fa-circle-play me-2"></i> Continue Learning </a>
+                                <a  href="#" id="left-nav-item1"  class="nav-linkss left-nav-item"><i class="fa-sharp fa-solid fa-heart me-2"></i> For You </a>
+                                <a  href="dashboard.html"   class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i> Dashboard </a>
+                                <a  href="#" id="left-nav-item2"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Resumé Builder </a>
+                                <a  href="#" id="left-nav-item3"  class="left-nav-item nav-linkss link-last"><i class="fa-solid fa-circle-play me-2 "></i>Learner Report </a>
+                                <hr>
+                                <a  href="#" id="left-nav-item3"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Upgrade to Premium </a>
+                                <a  href="#" id="left-nav-item3 "  class="left-nav-item nav-linkss link-last"><i class="fa-solid fa-circle-play me-2"></i>Get Certification </a>
+                                <hr>
+                                <a  href="#" id="left-nav-item3"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Account Settings </a>
+                                <a  href="#" id="left-nav-item3"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Help </a>
+                                <a  href="#" id="left-nav-item3"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Log OUT </a>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <!-- dashboard content -->
+                <div class="col-lg-10">
+                     <div class="dashboard-content">
+                       <h3 class="user-welcome">Good Evening, <span> Sanjid</span></h3>
+                      <section>
+                        <ul class="nav nav-pills mb-3 my-pill" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><svg class="icon icon-books"><use xlink:href="./SVG/my.svg#icon-books"></use></svg>Learn & Get Certificates</button>
+                          </li>
+                          <li class="nav-item badge-box" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg class="icon icon-suitcase"><use xlink:href="./SVG/symbol-defs.svg#icon-suitcase"></use></svg>Build Your Career</button>
+                            <div class="badges">3</div>
+                          </li>
+                          <li class="nav-item badge-box" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><svg class="icon icon-currency-dollar"><use xlink:href="./SVG/dollor-coin.svg#icon-currency-dollar"></use></svg>Earn On Alison</button>
+                            <div class="badges">3</div>
+                          </li>
+                          <li class="nav-item nav-img" role="presentation">
+                             <img src="./img/dashboard-top-right-img.svg" alt="">
+                          </li>
+                        </ul>
+                
+                        <!-- dashboard page list -->
+                        <div class="tab-content" id="pills-tabContent">
+                
+                          <!-- 1st dashboard page -->
+                          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <!-- course progress section -->
+                             <section class="course-progress-section">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="course-progress-box">
+                                        <div class="card mb-3">
+                                          <div class="row g-0">
+                                            <div class="col-md-8 ">
+                                              <h3 class="course-p-title">Your Courses In Progress (1)</h3>
+                                              <div class="d-flex card-border">
+                                                 <div class="card-img-box">
+                                                  <img src="./img/alison_courseware_intro_1611 (1).jpg" class=" course-p-img rounded-start" alt="...">
+                                                 </div>
+                                                 <div class="progress-card-body">
+                                                  <h5 class="progress-card-title">Elderly Care and Caring for the Disabled
+                                                  </h5>
+                                                  <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                    </div>
+                                                      <span class="proggres-result"> <b>0%</b> Complete</span>
+                                                  </div>
+                                                  <p class="card-text"><small class="text-muted"><i> <b>Last active:</b> 7 days ago</i></small></p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="course-but-box">
+                                                   <div class="p-modal-btn">
+                                                   
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="course-modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                      View All Courses
+                                                    </button>
+                                                    <img src="./img/expand_icon.svg" alt="">
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                                                      <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                          <div class="modal-header text-center">
+                                                            <div class="text-center">
+                                          
+                                                            </div>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                          </div>
+                                                          <div class="modal-body">
+                                                            <div class="row">
+                                                              <div class="col-lg-12">
+                                                                <div class="course-progress-box">
+                                                                  <div class="card mb-3">
+                                                                    <div class="row g-0">
+                                                                      <div class="col-md-8 ">
+                                                                        <h3 class="course-p-title">Your Courses In Progress (1)</h3>
+                                                                        <div class="d-flex card-border">
+                                                                           <div class="card-img-box">
+                                                                            <img src="./img/alison_courseware_intro_1611 (1).jpg" class=" course-p-img rounded-start" alt="...">
+                                                                           </div>
+                                                                           <div class="progress-card-body">
+                                                                            <h5 class="progress-card-title">Elderly Care and Caring for the Disabled
+                                                                            </h5>
+                                                                            <div class="progress">
+                                                                              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                              </div>
+                                                                                <span class="proggres-result"> <b>0%</b> Complete</span>
+                                                                            </div>
+                                                                            <p class="card-text"><small class="text-muted"><i> <b>Last active:</b> 7 days ago</i></small></p>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <div class="col-md-4">
+                                                                          <div class="course-but-box">
+                                                                            
+                                                                             <div class="course-p-btn mx-auto">
+                                                                              <button class="btn">Continue Learning</button>
+                                                                             </div>
+                                                                          </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                   </div>
+                                                   <div class="course-p-btn mx-auto">
+                                                    <button class="btn">Continue Learning</button>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+
+                              <!--  Similar course section -->
+                              <section class="similar-course-section">
+                                <div class="container">
+                                  <div class="row">
+                                     <div class="similar-course-box">
+                                     
+                                      <div class="card mb-3">
+                                        <h3 class="course-p-title">Enrol In Similar Courses
+                                        </h3>                           
+                                         <div class="row">
+                                          <div class="col-md-4 border-end">
+                                            
+                                            <div class="d-flex align-items-center">
+                                               <div class="similar-card-img"><img src="./img/alison_courseware_intro_1609.jpg" class=" mt-2 rounded-start" alt="...">
+                                              </div>
+                                               <div class="similar-course-text mt-3">
+                                                 <h3>Introduction to Caregiving</h3>
+                                                 <p>More Information</p>
+                                               </div>
+                                             </div>
+                                         </div>
+                                        <div class="col-md-4 border-end">
+                                            <div class="d-flex align-items-center">
+                                               <div class="similar-card-img"><img src="./img/alison_courseware_intro_1609.jpg" class=" mt-2 rounded-start" alt="...">
+                                              </div>
+                                               <div class="similar-course-text mt-3">
+                                                 <h3>Introduction to Caregiving</h3>
+                                                 <p>More Information</p>
+                                               </div>
+                                             </div>
+                                         </div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center">
+                                               <div class="similar-card-img"><img src="./img/alison_courseware_intro_1609.jpg" class=" mt-2 rounded-start" alt="...">
+                                              </div>
+                                               <div class="similar-course-text mt-3">
+                                                 <h3>Introduction to Caregiving</h3>
+                                                 <p>More Information</p>
+                                               </div>
+                                             </div>
+                                         </div>
+                                         </div>
+                                      </div>
+                                     </div>
+                                  </div>
+                                </div>
+                              </section>
+
+                              <!-- track and stats -->
+                              <section class="track-and-stats">
+                                 <h3 class="track-title">Sanjid, track and grow your <b>stats and achievements. </b> </h3>
+                                 <div class="container">
+                                  <div class="row">
+                                     <div class="similar-course-box">
+                                     
+                                      <div class="card mb-3">
+                                                                   
+                                         <div class="row">
+                                          <div class="col-md-5">
+                                            <h3 class="course-p-title mt-2">Set A Weekly Study Reminder
+                                            </h3>
+                                            <p class="track-sub">Learners who set study reminders are 75% more likely to complete a course. You can change this any time</p>
+                                            
+                                         </div>
+                                        <div class="col-md-7 mt-2">
+                                            <div class="d-flex">
+                                              <div  class="reminder-btn me-2">
+                                                <div class="row">
+                                                  <input  type="radio" name="study-reminder">
+                                                  <div  class="title-reminder">
+                                                    
+                                                    Learn <b >2 days</b> a week</div>
+                                                  </div>
+                                              </div>
+                                              <div  class="reminder-btn me-2">
+                                                <div class="row">
+                                                  <input  type="radio" name="study-reminder">
+                                                  <div  class="title-reminder">
+                                                    <span class="recomanded">
+                                                      Recommended 
+                                                    </span>
+                                                    Learn <b >2 days</b> a week</div>
+                                                  </div>
+                                              </div>
+                                              <div  class="reminder-btn me-2">
+                                                <div class="row">
+                                                  <input  type="radio" name="study-reminder">
+                                                  <div  class="title-reminder">
+                                                    Learn <b >2 days</b> a week</div>
+                                                  </div>
+                                              </div>
+                                                  
+                                            </div>
+                                         </div>
+                                        
+                                         </div>
+                                      </div>
+                                     </div>
+
+                                     <!-- Your Learning Statistics -->
+                                     <div class="col-lg-6">
+                                           <div class="learning-Statistics-box">
+                                              <div class="d-flex">
+                                                <div class="left-statistics">
+                                                  <h3>Your Learning Statistics</h3>
+                                                  <div class="s-plan-box">
+                                                     <div class="plan-border">
+                                                       <div class="d-flex">
+                                                         <div class="s-plan-title">
+                                                          <h3 class="p-plan-time">0 Mins</h3>
+                                                          <p>Your Total Time Learning</p>
+                                                         </div>
+                                                        <img src="./img/clock_illustration@2x.webp" alt="">
+                                                       </div>
+
+                                                     </div>
+                                                     <div class="plan-border">
+                                                         <div class="d-flex s-plan-title-1">
+                                                          <h3 class="p-plan-time">Course Completion Percentage</h3>
+                                                          <p>0%</p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="plan-border">
+                                                         <div class="d-flex s-plan-title-1">
+                                                          <h3 class="p-plan-time">Course Completion Percentage</h3>
+                                                          <p>0%</p>
+                                                         </div>
+                                                     </div>
+                                                     <div class="plan-border">
+                                                         <div class="d-flex s-plan-title-1">
+                                                          <h3 class="p-plan-time">Course Completion Percentage</h3>
+                                                          <p>0%</p>
+                                                         </div>
+                                                     </div>
+                                                  </div>
+                                                </div>
+                                                <div class="right-statistics">
+                                                  <a href="" class="text-right">Your Learner Report</a>
+                                                  <div class="text-center">
+                                                    <img src="./img/statistics_empty.svg" alt="">
+                                                    <p>Your biggest competition is yourself!
+                                                      Track your study hours and watch your learning journey.</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                           </div>
+                                     </div>
+                                     <div class="col-lg-6">
+                                      <div class="your-medals-box ">
+                                         <h3 class="medals-title">Your Medals</h3>
+                                         <div class="medals-box d-flex">
+                                            <div class="medals d-flex">
+                                                 <div class="medals-pic">
+                                                  <img src="./img/medals-gold.svg" alt="">
+                                                 </div>
+                                                 <div class="medals-text">
+                                                   <h3>Gold</h3>
+                                                   <p>Learn <b>3 days</b>
+                                                    in a week to earn Gold</p>
+                                                 </div>
+                                            </div>
+                                            <div class="medals d-flex">
+                                                 <div class="medals-pic">
+                                                  <img src="./img/medals-gold.svg" alt="">
+                                                 </div>
+                                                 <div class="medals-text">
+                                                   <h3>Gold</h3>
+                                                   <p>Learn <b>3 days</b>
+                                                    in a week to earn Gold</p>
+                                                 </div>
+                                            </div>
+                                            <div class="medals d-flex">
+                                                 <div class="medals-pic">
+                                                  <img src="./img/medals-gold.svg" alt="">
+                                                 </div>
+                                                 <div class="medals-text">
+                                                   <h3>Gold</h3>
+                                                   <p>Learn <b>3 days</b>
+                                                    in a week to earn Gold</p>
+                                                 </div>
+                                            </div>
+                                         </div>
+                                         <hr>
+                                         <div class="next-medals">
+                                           <h3>Your Next Medal</h3>
+                                            <div class="n-medals-progress d-flex">
+                                               <h3>You are 1 day away from earning</h3>
+                                               <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                                <img class="d-block" src="./img/medals-bronze.svg" alt="">
+                                                <p>Bronze</p>
+                                             
+                                            </div>
+                                         </div>
+                                      </div>
+                                      
+                                     </div>
+                                  </div>
+                                </div>
+                              </section>
+                               
+                    
+                          </div>
+                
+                          <!-- 2nd landing page -->
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                          <!-- 2nd landing page -->
+                          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                        </div>
+                      </section>
+                     </div>
+                </div>
+            </div>
+         </div>
+      </main>
+
+
+
+
+
+      <!-- bootstrap js cdn -->
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script> 
+        document.querySelectorAll('.nav-linkss').forEach(link => {
+        if(link.href === window.location.href){
+        link.setAttribute('aria-current', 'page')
+        }
+        })
+    </script>
+
+</body>
+</html>
+
