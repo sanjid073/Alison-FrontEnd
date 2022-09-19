@@ -1,59 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css link -->
-    <link rel="stylesheet" href="./css/dashboard.css">
-     <!-- bootstrap css cdn -->
-     <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-     crossorigin="anonymous"
-   />
-   <!-- font awosome cdn -->
-   <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-   crossorigin="anonymous"
-   referrerpolicy="no-referrer"
- />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- left side var content -->
-            <div class="col-lg-2">
-                <div class="left-side-bar">
-                     <div class="user-profile-info">
-                        <img src="./img/user-profile.png" alt="">
-                        <h4 class="user-name">Sanjid Mahi</h4>
-                        <a class="view-profile" href="#">View Profile</a>
-                        <h6 class="a-id">Alison ID: 26295917</h6>
-                     </div>
-                     <div class="left-nav-group">
-                        <div class="user-option ">
-                            <a href="dashboard.html"  class="left-nav-item nav-linkss" ><i class="fa-solid fa-circle-play me-2"></i> Continue Learning </a>
-                            <a  href="" id="left-nav-item1"  class="nav-linkss left-nav-item"><i class="fa-sharp fa-solid fa-heart me-2"></i> For You </a>
-                            <a  href="test.html"   class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i> Dashboard </a>
-                            <a  href="" id="left-nav-item2"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Resumé Builder </a>
-                            <a  href="" id="left-nav-item3"  class="left-nav-item nav-linkss"><i class="fa-solid fa-circle-play me-2"></i>Learner Report </a>
-                        </div>
-                     </div>
-                </div>
-            </div>
+    <!-- css link -->
+    <link rel="stylesheet" href="./test.css" />
+    <!-- bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font awosome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js -->
+    <script src="./test.js"></script>
+  </head>
+  <body>
+    <div class="search-filters">
+      <div class="sticky-filters initial">
+        <!-- Button for search filters to slide out on mobile -->
+        <div class="tab">
+          <span class="icon-cross2"></span>
+          <span class="icon-new-filter"></span>
+          <span class="text">Filters</span>
         </div>
-     </div>
-     <script>
-        document.querySelectorAll('.nav-linkss').forEach(link => {
-    if(link.href === window.location.href){
-      link.setAttribute('aria-current', 'page')
-    }
-  })
-      </script>
-</body>
+
+        <div class="search-filter-inner mCustomScrollbar _mCS_21">
+          <div
+            id="mCSB_21"
+            class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+            style="max-height: none"
+            tabindex="0"
+          >
+            <div
+              id="mCSB_21_container"
+              class="mCSB_container"
+              style="position: relative; top: 0px; left: 0px"
+              dir="ltr"
+            >
+              <!-- .categories-filter -->
+              <div class="filter categories-filter" data-url-var="tag">
+                <span class="filter-heading2">Refine your Search</span>
+                <span class="filter-heading3 filter--categories-heading"
+                  >Course Subjects</span
+                >
+                <!--<span class="filter--clear-filters" style="display: none;">Clear filters</span>-->
+                <div class="clearfix"></div>
+
+                <ul class="categories-list main-list">
+                  <li class="management-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="management"
+                          data-id="management--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="management"
+                          checked
+                        />
+                        <label for="management"> management </label>
+                        <span class="badge1">263</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="programming-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="programming"
+                          data-id="programming--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="programming"
+                        />
+                        <label for="programming"> programming </label>
+                        <span class="badge1">196</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="engineering-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="engineering"
+                          data-id="engineering--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="engineering"
+                        />
+                        <label for="engineering"> engineering </label>
+                        <span class="badge1">181</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="science-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="science"
+                          data-id="science--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="science"
+                        />
+                        <label for="science"> science </label>
+                        <span class="badge1">162</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="health-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="health"
+                          data-id="health--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="health"
+                        />
+                        <label for="health"> health </label>
+                        <span class="badge1">140</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="marketing-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="marketing"
+                          data-id="marketing--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="marketing"
+                        />
+                        <label for="marketing"> marketing </label>
+                        <span class="badge1">122</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="communication-skills-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="communication-skills"
+                          data-id="communication-skills--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="communication-skills"
+                        />
+                        <label for="communication-skills">
+                          communication skills
+                        </label>
+                        <span class="badge1">108</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="mathematics-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="mathematics"
+                          data-id="mathematics--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="mathematics"
+                        />
+                        <label for="mathematics"> mathematics </label>
+                        <span class="badge1">106</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="education-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="education"
+                          data-id="education--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="education"
+                        />
+                        <label for="education"> education </label>
+                        <span class="badge1">100</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="english-language-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="english-language"
+                          data-id="english-language--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="english-language"
+                        />
+                        <label for="english-language"> english language </label>
+                        <span class="badge1">98</span>
+                      </div>
+                    </span>
+                  </li>
+                </ul>
+
+                <ul id="overflow-list" class="categories-list overflow-list">
+                  <li class="microsoft-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="microsoft"
+                          data-id="microsoft--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="microsoft"
+                        />
+                        <label for="microsoft"> microsoft </label>
+                        <span class="badge1">90</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="business-management-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="business-management"
+                          data-id="business-management--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="business-management"
+                        />
+                        <label for="business-management">
+                          business management
+                        </label>
+                        <span class="badge1">89</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="electrical-engineering-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="electrical-engineering"
+                          data-id="electrical-engineering--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="electrical-engineering"
+                        />
+                        <label for="electrical-engineering">
+                          electrical engineering
+                        </label>
+                        <span class="badge1">89</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="languages-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="languages"
+                          data-id="languages--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="languages"
+                        />
+                        <label for="languages"> languages </label>
+                        <span class="badge1">80</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="coding-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="coding"
+                          data-id="coding--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="coding"
+                        />
+                        <label for="coding"> coding </label>
+                        <span class="badge1">77</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="english-vocabulary-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="english-vocabulary"
+                          data-id="english-vocabulary--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="english-vocabulary"
+                        />
+                        <label for="english-vocabulary">
+                          english vocabulary
+                        </label>
+                        <span class="badge1">77</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="vocabulary-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="vocabulary"
+                          data-id="vocabulary--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="vocabulary"
+                        />
+                        <label for="vocabulary"> vocabulary </label>
+                        <span class="badge1">77</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="health-and-safety-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="health-and-safety"
+                          data-id="health-and-safety--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="health-and-safety"
+                        />
+                        <label for="health-and-safety">
+                          health and safety
+                        </label>
+                        <span class="badge1">76</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="electronics-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="electronics"
+                          data-id="electronics--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="electronics"
+                        />
+                        <label for="electronics"> electronics </label>
+                        <span class="badge1">73</span>
+                      </div>
+                    </span>
+                  </li>
+                  <li class="english-grammar-category">
+                    <span class="category-cancel" rel="nofollow">
+                      <div class="category-link-inner">
+                        <input
+                          id="english-grammar"
+                          data-id="english-grammar--category"
+                          class="category parent-category category_filter_temporary"
+                          type="checkbox"
+                          name="english-grammar"
+                        />
+                        <label for="english-grammar"> english grammar </label>
+                        <span class="badge1">73</span>
+                      </div>
+                    </span>
+                  </li>
+                </ul>
+                <span
+                  id="view-more-button"
+                  onclick="viewMore()"
+                  class="list-toggle categories-toggle"
+                  >View More
+                </span>
+                <span
+                  id="view-more-button-1"
+                  onclick="viewMoreX()"
+                  class="list-toggle categories-toggle"
+                  >View More
+                </span>
+                <!-- END .categories-list -->
+              </div>
+              <!-- END .categories-filter -->
+
+              <!-- Course Duration -->
+              <div
+                class="filter course-duration-filter"
+                data-url-var="duration"
+              >
+                <span class="filter-heading3">Course Duration</span>
+                <ul>
+                  <li>
+                    <input
+                      id="duration_2-3hours"
+                      type="checkbox"
+                      name="2-3%20hours"
+                    />
+                    <label for="duration_2-3hours"> 2-3 hours </label>
+                    <span class="badge1">1473</span>
+                  </li>
+                  <li>
+                    <input
+                      id="duration_4-6hours"
+                      type="checkbox"
+                      name="4-6%20hours"
+                    />
+                    <label for="duration_4-6hours"> 4-6 hours </label>
+                    <span class="badge1">1072</span>
+                  </li>
+                  <li>
+                    <input
+                      id="duration_7-10hours"
+                      type="checkbox"
+                      name="7-10%20hours"
+                    />
+                    <label for="duration_7-10hours"> 7-10 hours </label>
+                    <span class="badge1">179</span>
+                  </li>
+                  <li>
+                    <input
+                      id="duration_11-15hours"
+                      type="checkbox"
+                      name="11-15%20hours"
+                    />
+                    <label for="duration_11-15hours"> 11-15 hours </label>
+                    <span class="badge1">229</span>
+                  </li>
+                  <li>
+                    <input
+                      id="duration_16-20hours"
+                      type="checkbox"
+                      name="16-20%20hours"
+                    />
+                    <label for="duration_16-20hours"> 16-20 hours </label>
+                    <span class="badge1">51</span>
+                  </li>
+                  <li>
+                    <input
+                      id="duration_21hours"
+                      type="checkbox"
+                      name="21%2B%20hours"
+                    />
+                    <label for="duration_21hours"> 21+ hours </label>
+                    <span class="badge1">48</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- END .course-duration-filter -->
+
+              <!-- Course Type -->
+              <div class="filter course-type-filter" data-url-var="type">
+                <span class="filter-heading3">Course Type</span>
+                <ul>
+                  <li>
+                    <a class="type-cancel">
+                      <div class="type-link-inner">
+                        <input
+                          id="certificate"
+                          type="checkbox"
+                          name="certificate"
+                          checked
+                        />
+                        <label class="form-checkbox" for="certificate">
+                          Certificate
+                        </label>
+                        <span class="badge1">2764</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="type-cancel">
+                      <div class="type-link-inner">
+                        <input id="diploma" type="checkbox" name="diploma" />
+                        <label class="form-checkbox" for="diploma">
+                          Diploma
+                        </label>
+                        <span class="badge1">434</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- END .course-type-filter -->
+
+              <!-- Course Level -->
+              <div class="filter course-level-filter" data-url-var="level">
+                <span class="filter-heading3">Course Level</span>
+                <ul>
+                  <li>
+                    <input id="level-1" type="checkbox" name="level-1" />
+                    <label for="level-1"> Beginner </label>
+                    <span class="badge1">1931</span>
+                  </li>
+                  <li>
+                    <input id="level-2" type="checkbox" name="level-2" />
+                    <label for="level-2"> Intermediate </label>
+                    <span class="badge1">482</span>
+                  </li>
+                  <li>
+                    <input id="level-3" type="checkbox" name="level-3" />
+                    <label for="level-3"> Advanced </label>
+                    <span class="badge1">785</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- END .course-level-filter -->
+
+              <!-- Course Language -->
+              <div
+                class="filter course-language-filter"
+                data-url-var="language"
+              >
+                <span class="filter-heading3"
+                  ><em class="update-course_language_filter__heading"
+                    >Course Language</em
+                  ></span
+                >
+                <ul class="language-list main-list">
+                  <li>
+                    <input
+                      id="language-en"
+                      type="checkbox"
+                      checked=""
+                      name="en"
+                    />
+                    <label for="language-en"> English </label>
+                    <span style="display: none" class="badge1">3167</span>
+                  </li>
+                  <li>
+                    <input id="language-bg" type="checkbox" name="bg" />
+                    <label for="language-bg"> Bulgarian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-cs" type="checkbox" name="cs" />
+                    <label for="language-cs"> Czech </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-da" type="checkbox" name="da" />
+                    <label for="language-da"> Danish </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-nl" type="checkbox" name="nl" />
+                    <label for="language-nl"> Dutch (Belgium) </label>
+                    <span class="badge1">1</span>
+                  </li>
+                </ul>
+                <ul class="language-list overflow-list" style="display: none">
+                  <li>
+                    <input
+                      id="language-fr"
+                      type="checkbox"
+                      checked="checked"
+                      name="fr"
+                    />
+                    <label for="language-fr"> French </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-de" type="checkbox" name="de" />
+                    <label for="language-de"> German </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-hu" type="checkbox" name="hu" />
+                    <label for="language-hu"> Hungarian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-id" type="checkbox" name="id" />
+                    <label for="language-id"> Indonesian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-it" type="checkbox" name="it" />
+                    <label for="language-it"> Italian </label>
+                    <span class="badge1">2</span>
+                  </li>
+                  <li>
+                    <input id="language-lv" type="checkbox" name="lv" />
+                    <label for="language-lv"> Latvian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-lt" type="checkbox" name="lt" />
+                    <label for="language-lt"> Lithuanian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-pl" type="checkbox" name="pl" />
+                    <label for="language-pl"> Polish </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-pt" type="checkbox" name="pt" />
+                    <label for="language-pt"> Portuguese </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-ro" type="checkbox" name="ro" />
+                    <label for="language-ro"> Romanian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-hr" type="checkbox" name="hr" />
+                    <label for="language-hr"> Serbo-Croatian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-sk" type="checkbox" name="sk" />
+                    <label for="language-sk"> Slovak </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-sl" type="checkbox" name="sl" />
+                    <label for="language-sl"> Slovenian </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-es" type="checkbox" name="es" />
+                    <label for="language-es"> Spanish </label>
+                    <span class="badge1">7</span>
+                  </li>
+                  <li>
+                    <input id="language-es-LA" type="checkbox" name="es-LA" />
+                    <label for="language-es-LA">
+                      Spanish (Latin America)
+                    </label>
+                    <span class="badge1">4</span>
+                  </li>
+                  <li>
+                    <input id="language-es-MX" type="checkbox" name="es-MX" />
+                    <label for="language-es-MX"> Spanish (Mexico) </label>
+                    <span class="badge1">1</span>
+                  </li>
+                  <li>
+                    <input id="language-sv" type="checkbox" name="sv" />
+                    <label for="language-sv"> Swedish </label>
+                    <span class="badge1">1</span>
+                  </li>
+                </ul>
+                <span
+                id="view-more-button"
+                onclick="viewMore()"
+                class="list-toggle categories-toggle"
+                >View More
+              </span>
+              <span
+                id="view-more-button-1"
+                onclick="viewMoreX()"
+                class="list-toggle categories-toggle"
+                >View More
+              </span>
+              </div>
+              <!-- END .course-language-filter -->
+
+              <br />
+
+              <span
+                class="filter--clear-filters clear-filters--bottom"
+                style="display: none"
+                >Clear filters</span
+              >
+              <div class="clearfix"></div>
+            </div>
+            <div
+              id="mCSB_21_scrollbar_vertical"
+              class="mCSB_scrollTools mCSB_21_scrollbar mCS-light mCSB_scrollTools_vertical"
+              style="display: block"
+            >
+              <div class="mCSB_draggerContainer">
+                <div
+                  id="mCSB_21_dragger_vertical"
+                  class="mCSB_dragger"
+                  style="
+                    position: absolute;
+                    min-height: 30px;
+                    display: block;
+                    height: 60px;
+                    max-height: 271px;
+                    top: 0px;
+                  "
+                >
+                  <div class="mCSB_dragger_bar" style="line-height: 30px"></div>
+                </div>
+                <div class="mCSB_draggerRail"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END .course-features-filter -->
+      </div>
+    </div>
+  </body>
 </html>

@@ -718,6 +718,12 @@ a {
   background: #fff 0 0 no-repeat padding-box;
   border-radius: 12px;
 }
+.statistics-flex{
+  display: flex;
+}
+.learing-flex{
+  display: flex;
+}
 .left-statistics {
   width: 100% !important;
 }
@@ -831,6 +837,7 @@ a {
   margin-bottom: 6px;
 }
 .medals-box {
+  display: flex;
   margin-top: 20px;
   justify-content: space-between;
 }
@@ -907,3 +914,193 @@ a {
   font-size: 16px;
   margin-left: 9px;
 }
+.medals-button-box{
+  height: 51px;
+    background-color: #83c124;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+    max-width: 533px;
+}
+.medals-button-box a{
+
+  text-align: center;
+    font: normal normal 700 14px/14px Roboto;
+    letter-spacing: 0;
+    color: #fff;
+    opacity: 1;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+}
+
+/* footer */
+footer {
+  padding: 20px 0 0;
+  margin: 0 !important;
+  background: #2e3942;
+  padding: 0;
+
+  z-index: 9;
+}
+.footer-bg {
+  background-image: url(https://cdn01.alison-static.net/public/html/site/img/footer-triangles.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.footer_h3 {
+  display: inline-block;
+  border-bottom: 2px solid #0091c7;
+  color: #fff;
+  font: 300 1.075em Roboto, helvetica neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin: 25px 0 10px;
+  padding-bottom: 3px;
+  text-align: left !important;
+}
+.footer-link ul {
+  list-style: none;
+  text-align: left;
+  /* padding-left: 38px !important; */
+  padding-left: 0;
+}
+.footer-link ul li {
+  margin-bottom: 3px;
+}
+.footer-link ul li a {
+  color: #fff;
+  font: 400 0.825em Roboto, helvetica neue, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: 0.3s;
+}
+.footer-link ul li a:hover {
+  color: #d9d9d9;
+  margin-left: 3px;
+}
+.wrap-bottom {
+  background: #1c232e;
+  width: 100%;
+  padding: 10px 0;
+}
+.w-bottom img {
+  display: inline-block;
+  margin-right: 20px;
+  width: 135px;
+}
+.w-bottom a {
+  font: 300 0.975em Roboto, helvetica neue, Helvetica, Arial, sans-serif;
+  padding: 0 10px;
+  color: #505960 !important;
+  border-right: 1px solid #505960;
+}
+.course-flex{
+  display: flex;
+}
+
+
+
+/* media quary -------------------------*/
+@media (min-width: 320px) and (max-width: 1024px) {
+  .my-pill {
+    background: #f3f6f7;
+    padding: 0px;
+    width: 380px;
+    margin: 0;
+    border-radius: 50px;
+  }
+  .my-pill li button {
+    letter-spacing: 0 !important;
+    font-size: 9px !important;
+    display: inline-block;
+    color: #5d676e !important;
+    padding: 0 5px !important;
+    height: 32px !important;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px !important;
+  }
+  /* .nav-img */
+  .course-progress-box .card{
+    width: 100% !important;
+  }
+  .user-welcome{
+    text-align: center;
+  }
+  .nav-img{
+    margin-top: 20px !important;
+  }
+  .badges{
+    display: none;
+  }
+  .course-flex{
+    display: block !important;
+  }
+  .proggres-result{
+    display: block;
+  }
+  .course-flex .progress{
+    width: 60% !important;
+  }
+  .card-border{
+    border: none !important;
+  }
+  .p-modal-btn{
+    display: none;
+  }
+  .similar-course-box .card{
+    width: 100% !important;
+  }
+  .learing-flex{
+    display: block;
+  }
+  .reminder-btn{
+    margin-bottom: 10px !important;
+  }
+  .statistics-flex{
+    display: block;
+    justify-content: space-between;
+  }
+  /* .s-plan-box */
+  .s-plan-box{
+    width: 100%;
+  }
+  .right-statistics a {
+    position: absolute;
+    top: 10px;
+  }
+  .medals-box{
+    display: block;
+  }
+  .medals-button-box{
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
+
+  /* footer */
+  .footer_h3 {
+    margin-left: 20%;
+  }
+  .footer-link ul {
+    padding-left: 20% !important;
+  }
+  .w-bottom {
+    text-align: center;
+  }
+  .w-bottom img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .dollor-sign {
+    display: none;
+  }
+
+}  
