@@ -1208,6 +1208,7 @@ footer {
 
 /* media quary -------------------------*/
 @media (min-width: 320px) and (max-width: 1024px) {
+  /* header */
   .my-pill {
     background: #f3f6f7;
     padding: 0px;
