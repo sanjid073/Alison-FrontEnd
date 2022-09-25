@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- css link -->
+     <link rel="stylesheet" href="./css/course-details.css" />
+     <!-- bootstrap css cdn -->
+     <link
+       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+       rel="stylesheet"
+       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+       crossorigin="anonymous"
+     />
+      <!-- slick css cdn -->
+      <link rel="stylesheet" href="css/slick-theme.css">
+      <link rel="stylesheet" href="css/slick.css">
+ 
+      <!-- jquary cdn -->
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+     <!-- font awosome cdn -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+     <!-- js link -->
+     <script src="./js/course-details.js"></script>
+    <title>Course Details</title>
+</head>
+<body>
+      
+         <!-- header -->
+     <header>
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand mt-2" href="#"
+            ><img class="logo" src="img/logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex">
+              <input
+                class="form-control search-box"
+                type="search"
+                placeholder="What do you want to learn?"
+                aria-label="Search"
+              />
+              <button class="btn btn-search" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore Diplomas & Certificates
+                </a>
+                <div
+                  class="drop-down-box dropdown-menu"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <h3>Course Types</h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="drop-box">
+                        <div class="row">
+                          <div class="col-lg-8 p-4">
+                            <h5 class="mb-2">Diploma Courses</h5>
+                            <a href="#" class="mb-1"
+                              >View all Diploma Courses <span>></span>
+                            </a>
+                          </div>
+                          <div class="col-lg-4">
+                            <img src="img/diploma-courses.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="drop-box">
+                        <div class="row">
+                          <div class="col-lg-8 p-4">
+                            <h5 class="mb-2">Certificate Courses</h5>
+                            <a href="#" class="mb-1"
+                              >View all Certificate Course<span>></span>
+                            </a>
+                          </div>
+                          <div class="col-lg-4">
+                            <img src="img/certificate-courses.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="mt-4">Course Categories</h3>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="drop-box-2 d-flex align-items-center p-4">
+                        <div><img src="img/it-courses.svg" alt="" /></div>
+                        <div class="ms-2">
+                          <h5 class="mb-0">IT</h5>
+                          <a href="#">886 Courses<span>></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  >Discover Careers</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+
+                <ul
+                  class="dropdown-menu more-drop-main p-2"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                  <div class="more-drop d-flex align-items-center p-2">
+                    <div class="me-3"><img src="img/wpa.svg" alt="" /></div>
+                    <div class="ms-2">
+                      <h5 class="mb-0">Workplace Personality Assessment</h5>
+                      <a href="#">Discover Your Strengths & Weaknesses</a>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse me-auto justify-content-end" id="navbarSupportedContent">
+            <li class="nav-item dollar-nav dropdown">
+              <a
+                class="nav-link "
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <span class="dollor-sign"><i class="fa-solid fa-dollar-sign"></i></span>
+              </a>
+
+              <ul class="dropdown-menu coin-drop" aria-labelledby="navbarDropdown">
+                <li>
+                   <div class="row">
+                    <div class="col-lg-6">
+                      <img src="img/not-affiliate.svg" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                      <p>Become an Alison Affiliate in one click, and start earning money by sharing any page on the Alison website.</p>
+                      <button class="btn-aff">Become An Affiliate</button>
+                    </div>
+                   </div>
+                </li>
+                
+               
+              </ul>
+            </li>
+
+         
+
+            <button
+              type="button"
+              class="btn-login"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn-signUp"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Sign Up
+            </button>
+
+            <!-- Modal -->
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="my-modal modal-dialog-centered">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <button  type="button" class="btn-close close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header d-block  py-5">
+                      <h5 id="modal-title">Sign Up For Free</h5>
+                      <p id="modal-sub-msg">
+                        Join the World’s Largest Free Learning Community
+                      </p>
+                      <div class="modal-btn">
+                         <button id="signup-modal" onclick="signUp()">SignUp</button>
+                         <button id="login-modal" onclick="login()">Login</button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                        
+                      <div class="row">
+                        <div class="col-lg-6 px-5 py-2 ">
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/facebook-square.svg" alt="">
+                              <a href="#">Continue with Facebook</a>
+                             </div>
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/google-square.svg" alt="">
+                              <a href="#">Continue with Google</a>
+                             </div>
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/microsoft-square.svg" alt="">
+                              <a href="#">Continue with Microsoft</a>
+                             </div>
+                             <div class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/linkedin-square.svg" alt="">
+                              <a href="#">Continue with Linkedin</a>
+                             </div>
+                             <div id="yahoo-box" class="s-media-box d-flex justify-content-center">
+                              <img class="me-2" src="img/yahoo-square.svg" alt="">
+                              <a href="#">Continue with Yahoo</a>
+                             </div>
+                             <p id="signup-bottom" class="signup-bottom">Already have an Alison account?<a href="#" class="btn-sm-bottom">Login</a> </p>
+                             <p  id="login-bottom" class="signup-bottom">Don't have an Alison account? <a href="#" class="btn-sm-bottom">Sign Up</a> </p>
+                        </div>
+                        <div class="col-lg-6 px-5 py-2">
+                            <div id="login-part">
+                              <p class="signup-text">This is the name that will appear on your Certification</p>
+                          <form action="">
+                            <div class="row ">
+                              <div class="col-lg-6"><input type="text" class="signup-input" placeholder="First name"></div>
+                              <div class="col-lg-6"><input type="text" placeholder="Surname" class="signup-input"></div>
+                            </div>
+                            </div>
+                            <input type="email" placeholder="Email" class="signup-input" name="" id="">
+                            <input type="password" placeholder="Password" class="signup-input" name="" id="">
+                            <label id="checkbox"  class="signup-check me-2 mb-5" >
+                              <input  type="checkbox"  > I agree to the Terms and Conditions
+
+                            </label>
+                            <label id="checkbox-1"  class="signup-check me-2 mb-5" >
+                              <input  type="checkbox" class="ms-2" >Keep me logged in
+
+                            </label>
+                            <a href="" id="f-pass">Forgot password?</a>
+                               <div class="sign-up-here">
+                                <img class="pointer-img" src="img/pointer.svg" alt="">
+                                <button id="main-signup-btn" class="main-sign-btn" type="submit">Sign Up</button>
+                               </div>
+                          </form>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="language">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link "
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-regular fa-globe"></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item my-2" href="#"
+                      ><img
+                        class="me-2"
+                        style="width: 20px"
+                        src="img/en.svg"
+                        alt=""
+                      />English</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item my-2" href="#"
+                      ><img
+                        class="me-2"
+                        style="width: 20px"
+                        src="img/es.svg"
+                        alt=""
+                      />Spanish</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item my-2" href="#"
+                      ><img
+                        class="me-2"
+                        style="width: 20px"
+                        src="img/fr.svg"
+                        alt=""
+                      />French</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- nav box -->
+    <div class="nav-box">
+      <div class="container mt-5">
+          <a href="#">Home ></a>
+          <a href="#">IT Computer ></a>
+          <a href="#"> Hardware ></a>
+          <a href="#">CompTIA A+ 1000 - Part 1</a>
+      </div>
+    </div>
+    <main>
+       <section class="course-details">
+          <div class="container">
+               <div class="course-details-box">
+                  <div class="row">
+                      <div class="col-lg-8">
+                          <div class="course-left">
+                              <div class="c-left-heading">
+                                  <h3 class="d-inline">CompTIA A+ 1000 - Part 1</h3>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                              </div>
+                              <div class="left-sub">
+                                  <p>Learn the skills necessary to become a valued PC service specialist with this free online CompTIA A+ diploma course.</p>
+                                  <i class="fa-solid fa-building-columns"></i>
+                                  <a href="#"> Publisher: Workforce Academy Partnership</a>
+                              </div>
+                              <div class="left-text">
+                                  <p>This course is the first part of an industry-recognized credential that certifies the competency of PC service specialists. It is backed by over fifty major computer hardware and software manufacturers, vendors, distributors, resellers and publications and tells people that you know how to service and repair computers. We explain how to handle various components to provide the skills needed to become an Information Technology (IT) professional.                                    </p>
+                              </div>
+                              <button class="btn btn-primary mb-2 btn-lg rounded-pill">Start Course Now</button>
+                          </div>
+                      </div>
+                      <div class="col-lg-4">
+                          <div class="course-right">
+                              <div class="row">
+                                  <div class="col-lg-8">
+                                     <div class="right-img">
+                                      <img src="./img/alison_courseware_intro_1961.webp" alt="">
+                                     </div>
+                                  </div>
+                                  <div class="col-lg-4">
+                                      <div class="brief__icons">
+                                          <ul>
+                                          <li class="course-icons">
+                                              <i class="fa-solid fa-clock"></i>
+                                          <h3>Duration</h3>
+                                          <span>6-10 Hours</span>
+                                          </li>
+                                          <li class="course-icons">
+                                              <i class="fa-solid fa-graduation-cap"></i>
+                                          <div>
+                                          <h3>Students</h3>
+                                          <span> 79,847 </span>
+                                          </div>
+                                          </li>
+                                          <li class="course-icons">
+                                              <i class="fa-solid fa-clock"></i>
+                                          <h3>Accreditation</h3>
+                                          <a title="Accreditation" href="https://alison.com/about/accreditation" class="publisher">
+                                          <span>CPD</span>
+                                          </a>
+                                          </li>
+                                          </ul>
+                                          </div>
+                                  </div>
+                                  <div class="col-lg-12">
+                                      <div class="affiliate">
+                                          <p>Share This Course And Earn Money
+                                          <span>&nbsp; </span>
+                                          </p>
+                                          <a href="" class="btn">Become an Affiliate Member</a>
+                                          </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+          </div>
+       </section>
+       <!-- course tav -->
+       <section class="course-tav">
+           <div class="container">
+              <div class="course-tav-box">
+                  <div class="course-tabs-header">
+                      <h2 id="middle_tab_1" onclick="desView()" class="active">Description</h2>
+                      <h2 id="middle_tab_2" onclick="modulesView()" class="">Modules</h2>
+                      <h2 id="middle_tab_3" onclick="outCome()" class="">Outcome</h2>
+                      <h2 id="middle_tab_4" onclick="certificaite()" class="">Certification</h2>
+                      <a id="middle_button_right" href="https://alison.com/courses/comptia-a-1000-part-1/content" class="btn btn-blue">
+                      View course modules >
+                      </a>
+                      </div>
+                      <div class="course-tav-content p-3">
+                          <div id="tab-content-1">
+                               <p>This diploma course provides the IT skills needed to become a PC service specialist. The ‘CompTIA A+’ qualification was established by the Computing Technology Industry Association in the United States but has become a worldwide standard that assures people of your competence. We explain what is required to maintain safety for you and the computer components you work with. We also examine the system components and establish their roles.</p>
+                               <p>
+                                  We then cover types of memory and delve into BIOS, CMOS and storage devices like hard drives. We discuss power supplies and voltage before moving on to ports, cables, connectors and input and output devices. The course wraps up with an overview of other types of hardware you will encounter: printers, mobile devices, multimedia and laptop computers.
+                               </p>
+                               <p>We use practical demonstrations of real-world applications of these skills to train you to handle a range of problems on the job. This diploma course covers the core skills required to begin a career servicing computers and other hardware. Sign up to become a valued specialist and gain a qualification that won’t lose value as computers drive the Information Age and we will always need people who can service and repair them.</p>
+                               <a id="middle_description_start_course" href="" tabindex="0">
+                                  Start Course Now </a>
+                          </div>
+                          <div id="tab-content-2">
+                              <div class="modules-content">
+                                 
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="IT Professional Soft Skills" tabindex="0">
+                                  <h3>
+                                  IT Professional Soft Skills
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84173/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - IT Professional Soft Skills - Part 1" href="https://alison.com/topic/learn/84174/topic-a-demo-1-it-professional-soft-skills-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 1 - IT Professional Soft Skills - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - IT Professional Soft Skills - Part 2" href="https://alison.com/topic/learn/84175/topic-a-demo-2-it-professional-soft-skills-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 2 - IT Professional Soft Skills - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84176/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Safety for You and Computer Components" tabindex="0">
+                                  <h3>
+                                  Safety for You and Computer Components
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84177/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Safety for You and Computer Components - Part 1" href="https://alison.com/topic/learn/84178/topic-a-demo-1-safety-for-you-and-computer-components-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Safety for You and Computer Components - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - Safety for You and Computer Components - Part 2" href="https://alison.com/topic/learn/84179/topic-a-demo-2-safety-for-you-and-computer-components-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 2 - Safety for You and Computer Components - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 3 - Safety for You and Computer Components - Part 3" href="https://alison.com/topic/learn/84180/topic-a-demo-3-safety-for-you-and-computer-components-part-3" tabindex="0">
+                                  <h4>Topic A - Demo 3 - Safety for You and Computer Components - Part 3</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 4 - Safety for You and Computer Components - Part 4" href="https://alison.com/topic/learn/84181/topic-a-demo-4-safety-for-you-and-computer-components-part-4" tabindex="0">
+                                  <h4>Topic A - Demo 4 - Safety for You and Computer Components - Part 4</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 5 - Safety for You and Computer Components - Part 5" href="https://alison.com/topic/learn/84182/topic-a-demo-5-safety-for-you-and-computer-components-part-5" tabindex="0">
+                                  <h4>Topic A - Demo 5 - Safety for You and Computer Components - Part 5</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84183/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="System Component Overview" tabindex="0">
+                                  <h3>
+                                  System Component Overview
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84184/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - System Component - Part 1" href="https://alison.com/topic/learn/84185/topic-a-demo-1-system-component-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 1 - System Component - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - System Component - Part 2" href="https://alison.com/topic/learn/84186/topic-a-demo-2-system-component-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 2 - System Component - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84187/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Understanding Motherboards" tabindex="0">
+                                  <h3>
+                                  Understanding Motherboards
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Understanding Motherboards" href="https://alison.com/topic/learn/84188/topic-a-demo-1-understanding-motherboards" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Understanding Motherboards</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84189/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84190/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Understanding Processors" tabindex="0">
+                                  <h3>
+                                  Understanding Processors
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84191/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Performing Installation of a Processor - Part 1" href="https://alison.com/topic/learn/84192/topic-a-demo-1-performing-installation-of-a-processor-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Performing Installation of a Processor - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - Performing Installation of a Processor - Part 2" href="https://alison.com/topic/learn/84193/topic-a-demo-2-performing-installation-of-a-processor-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 2 - Performing Installation of a Processor - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 3 - Performing Installation of a Processor - Part 3" href="https://alison.com/topic/learn/84194/topic-a-demo-3-performing-installation-of-a-processor-part-3" tabindex="0">
+                                  <h4>Topic A - Demo 3 - Performing Installation of a Processor - Part 3</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84195/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Understanding Types of Memory" tabindex="0">
+                                  <h3>
+                                  Understanding Types of Memory
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84196/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Understanding Types of Memory - Part 1" href="https://alison.com/topic/learn/84197/topic-a-demo-1-understanding-types-of-memory-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Understanding Types of Memory - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - Understanding Types of Memory - Part 2" href="https://alison.com/topic/learn/84198/topic-a-demo-2-understanding-types-of-memory-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 2 - Understanding Types of Memory - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84199/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Understanding BIOS and CMOS" tabindex="0">
+                                  <h3>
+                                  Understanding BIOS and CMOS
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84200/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - BIOS and CMOS - Part 1" href="https://alison.com/topic/learn/84201/topic-a-demo-1-bios-and-cmos-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 1 - BIOS and CMOS - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - BIOS and CMOS - Part 2" href="https://alison.com/topic/learn/84202/topic-a-demo-2-bios-and-cmos-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 2 - BIOS and CMOS - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 3 - BIOS and CMOS - Part 3" href="https://alison.com/topic/learn/84203/topic-a-demo-3-bios-and-cmos-part-3" tabindex="0">
+                                  <h4>Topic A - Demo 3 - BIOS and CMOS - Part 3</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84204/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Hard Drives and Storage Devices" tabindex="0">
+                                  <h3>
+                                  Hard Drives and Storage Devices
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84205/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Installing IDE Devices" href="https://alison.com/topic/learn/84206/topic-a-demo-1-installing-ide-devices" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Installing IDE Devices</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic B" href="https://alison.com/topic/learn/84207/topic-b" tabindex="0">
+                                  <h4>Topic B</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic B - Demo 1 - Hard Drives and Storage Devices - Part 1" href="https://alison.com/topic/learn/84208/topic-b-demo-1-hard-drives-and-storage-devices-part-1" tabindex="0">
+                                  <h4>Topic B - Demo 1 - Hard Drives and Storage Devices - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic B - Demo 2 - Hard Drives and Storage Devices - Part 2" href="https://alison.com/topic/learn/84209/topic-b-demo-2-hard-drives-and-storage-devices-part-2" tabindex="0">
+                                  <h4>Topic B - Demo 2 - Hard Drives and Storage Devices - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic B - Demo 3 - Hard Drives and Storage Devices - Part 3" href="https://alison.com/topic/learn/84210/topic-b-demo-3-hard-drives-and-storage-devices-part-3" tabindex="0">
+                                  <h4>Topic B - Demo 3 - Hard Drives and Storage Devices - Part 3</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84211/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Power Supplies and Voltage" tabindex="0">
+                                  <h3>
+                                  Power Supplies and Voltage
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84212/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Power Supplies and Voltage" href="https://alison.com/topic/learn/84213/topic-a-demo-1-power-supplies-and-voltage" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Power Supplies and Voltage</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84214/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Ports, Cables, and Connectors" tabindex="0">
+                                  <h3>
+                                  Ports, Cables, and Connectors
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84215/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Ports, Cables, and Connectors Hardware" href="https://alison.com/topic/learn/84216/topic-a-demo-1-ports-cables-and-connectors-hardware" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Ports, Cables, and Connectors Hardware</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84217/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Input and Output Devices" tabindex="0">
+                                  <h3>
+                                  Input and Output Devices
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84218/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Input and Output Devices - Part 1" href="https://alison.com/topic/learn/84219/topic-a-demo-1-input-and-output-devices-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Input and Output Devices - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - Input and Output Devices - Part 2" href="https://alison.com/topic/learn/84220/topic-a-demo-2-input-and-output-devices-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 2 - Input and Output Devices - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 3 - Input and Output Devices - Part 3" href="https://alison.com/topic/learn/84221/topic-a-demo-3-input-and-output-devices-part-3" tabindex="0">
+                                  <h4>Topic A - Demo 3 - Input and Output Devices - Part 3</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84222/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Managing Printers" tabindex="0">
+                                  <h3>
+                                  Managing Printers
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84223/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Printer Instsall" href="https://alison.com/topic/learn/84224/topic-a-demo-1-printer-instsall" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Printer Instsall</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 2 - Managing Printers - Part 1" href="https://alison.com/topic/learn/84225/topic-a-demo-2-managing-printers-part-1" tabindex="0">
+                                  <h4>Topic A - Demo 2 - Managing Printers - Part 1</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 3 - Managing Printers - Part 2" href="https://alison.com/topic/learn/84226/topic-a-demo-3-managing-printers-part-2" tabindex="0">
+                                  <h4>Topic A - Demo 3 - Managing Printers - Part 2</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 4 - Managing Printers - Part 3" href="https://alison.com/topic/learn/84227/topic-a-demo-4-managing-printers-part-3" tabindex="0">
+                                  <h4>Topic A - Demo 4 - Managing Printers - Part 3</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 5 - Managing Printers - Part 4" href="https://alison.com/topic/learn/84228/topic-a-demo-5-managing-printers-part-4" tabindex="0">
+                                  <h4>Topic A - Demo 5 - Managing Printers - Part 4</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 6 - Managing Printers - Part 5" href="https://alison.com/topic/learn/84229/topic-a-demo-6-managing-printers-part-5" tabindex="0">
+                                  <h4>Topic A - Demo 6 - Managing Printers - Part 5</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Review Quiz" href="https://alison.com/topic/learn/84230/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Mobile Devices, Multimedia, and Laptop Computers" tabindex="0">
+                                  <h3>
+                                  Mobile Devices, Multimedia, and Laptop Computers
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="Topic A" href="https://alison.com/topic/learn/84231/topic-a" tabindex="0">
+                                  <h4>Topic A</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic A - Demo 1 - Five Laptops" href="https://alison.com/topic/learn/84232/topic-a-demo-1-five-laptops" tabindex="0">
+                                  <h4>Topic A - Demo 1 - Five Laptops</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic B" href="https://alison.com/topic/learn/84233/topic-b" tabindex="0">
+                                  <h4>Topic B</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic B - Demo 1 - Mobile Devices, Multimedia, and Laptop Computers" href="https://alison.com/topic/learn/84234/topic-b-demo-1-mobile-devices-multimedia-and-laptop-computers" tabindex="0">
+                                  <h4>Topic B - Demo 1 - Mobile Devices, Multimedia, and Laptop Computers</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                  <a title="Topic B - Demo 2 - Mobile Device Maintenance" href="https://alison.com/topic/learn/84235/topic-b-demo-2-mobile-device-maintenance" tabindex="0">
+                                  <h4>Topic B - Demo 2 - Mobile Device Maintenance</h4>
+                                  </a>
+                                  </li>
+                                  <li>
+                                   <a title="Review Quiz" href="https://alison.com/topic/learn/84236/review-quiz" tabindex="0">
+                                  <h4>Review Quiz</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  <a href="https://alison.com/courses/comptia-a-1000-part-1/content" title="Course assessment" tabindex="0">
+                                  <h3>
+                                  Course assessment
+                                  </h3>
+                                  </a>
+                                  <ul>
+                                  <li>
+                                  <a title="CompTIA A+ 1000 - Part 1 - Course assessment" href="https://alison.com/topic/learn/84237/comptia-a-1000-part-1-course-assessment" tabindex="0">
+                                  <h4>CompTIA A+ 1000 - Part 1 - Course assessment</h4>
+                                  </a>
+                                  </li>
+                                  </ul>
+                                  </div>
+                          </div>
+                          <div id="tab-content-3">
+                              <div class="outcome-content-inner">
+                                  <p class="mt-3">By the end of this course, you will be able to:</p><br>
+                                  <ul>
+                                  <li>Compare types of memory</li>
+                                  <li>Understand hard drives and other storage devices</li>
+                                  <li>Identify power supplies and voltage</li>
+                                  <li>Discuss types of input and output devices</li>
+                                  <li>Compare the maintenance of mobile devices and laptop computers</li>
+                                  </ul>
+                                  <p></p>
+                                  </div>
+                          </div>
+                          <div id="tab-content-4">
+                              <div class="certification-content-inner">
+                                  <p> All Alison courses are free to enrol, study and complete. To successfully complete this Certificate course and become an Alison Graduate, you need to achieve 80% or higher in each course assessment. Once you have completed this Certificate course, you have the option to acquire an official Certificate, which is a great way to share your achievement with the world. Your Alison Certificate is:<br><br>
+                                  Ideal for sharing with potential employers - include it in your CV, professional social media profiles and job applications<br>
+                                  An indication of your commitment to continuously learn, upskill and achieve high results<br>
+                                  An incentive for you to continue empowering yourself through lifelong learning<br><br>
+                                  Alison offers 3 types of Certificates for completed Certificate courses:<br><br>
+                                  <strong>Digital Certificate</strong> - a downloadable Certificate in PDF format, immediately available to you when you complete your purchase<br>
+                                  <strong>Certificate</strong> - a physical version of your officially branded and security-marked Certificate, posted to you with FREE shipping<br>
+                                  <strong>Framed Certificate</strong> - a physical version of your officially branded and security-marked Certificate in a stylish frame, posted to you with FREE shipping<br><br> All Certificates are available to purchase through the <a href="https://alison.com/shop" target="_blank" tabindex="0">Alison Shop</a>. For more information on purchasing Alison Certificates, please visit our <a href="https://alison.com/faqs" target="_blank" tabindex="0">FAQs</a>. If you decide not to purchase your Alison Certificate, you can still demonstrate your achievement by sharing your Learner Record or Learner Achievement Verification, both of which are accessible from your Dashboard. For more details on our Certificate pricing, please visit our <a href="https://alison.com/about/pricing" target="_blank" tabindex="0">Pricing Page</a>. </p>
+                                  </div>
+                          </div>
+                      </div>
+                      <div class="course-tabs-tags">
+                          Tags:
+                          <ul>
+                          <li>
+                          <a href="" title="Computer Hardware">
+                          <span class="tag-name">Computer Hardware</span>
+                          <span class="hovered-tag-name">
+                          <span>Computer Hardware</span>
+                          </span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="https://alison.com/tag/comptia" title="Comptia">
+                          <span class="tag-name">Comptia</span>
+                          <span class="hovered-tag-name">
+                          <span>Comptia</span>
+                          </span>
+                          </a>
+                          </li>
+                          <li>
+                          <a href="https://alison.com/tag/comptia-a+" title="Comptia A+">
+                          <span class="tag-name">Comptia A+</span>
+                          <span class="hovered-tag-name">
+                          <span>Comptia A+</span>
+                          </span>
+                          </a>
+                          </li>
+                          </ul>
+                          </div>
+              </div>
+           </div>
+       </section>
+       <!-- similar course -->
+       <section class="similar-course">
+           <div class="container">                     
+                  <div class="similar-box">
+                      <div class="course-tabs-header p-2">
+                          <h3>Similar course</h3>                      
+                         </div>
+                      <div class="row mx-auto">
+                          <div class="my-slide me-1">
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <span class="badge bg-dark">Certificate</span>
+                                  <span class="badge bg-danger">health</span>
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  <div class="card-info">
+                                    <div class="course-block-intro">
+                                      <div class="link-group share-outer course-block-share" data-id="1611" data-type="course" style="height: auto;">
+                                          <span class="btn-facebook" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></span>
+                                          <span class="btn-twitter" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter"></i></span>
+                                          <span class="btn-linkedin" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></span>
+                                      </div>
+                                      <!-- END .link-group -->
+                              
+                                      <a class="course-block-wrapper" href="https://alison.com/courses/elderly-care-and-caring-for-the-disabled-revised/content#event=login" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          <span class="start_now_course_tile" title="Elderly Care and Caring for the Disabled">
+                                              <h5>Elderly Care and Caring for the Disabled</h5>
+                              
+                                              <span class="publisher">
+                                                      Advance Learning
+                                              </span>
+                              
+                                              <div class="course-intro">In this course learn how to treat people suffering from various mental and physical health conditions, as a result of ag...</div>
+                                          </span>
+                                      </a>
+                              
+                                      <a class="course-block-wrapper more-info" href="https://alison.com/course/elderly-care-and-caring-for-the-disabled-revised" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          More Information
+                                      </a>
+                                  </div>
+                                  </div>
+  
+                                  <div class="mx-auto">
+                                    <a href="#" class="btn pb-2 mx-auto text-center btn-primary">Start Now</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <span class="badge bg-dark">Certificate</span>
+                                  <span class="badge bg-danger">health</span>      
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  <div class="card-info">
+                                    <div class="course-block-intro">
+                                        <div class="link-group share-outer course-block-share" data-id="1611" data-type="course" style="height: auto;">
+                                            <span class="btn-facebook" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></span>
+                                            <span class="btn-twitter" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter"></i></span>
+                                            <span class="btn-linkedin" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></span>
+                                      </div>
+                                      <!-- END .link-group -->
+                              
+                                      <a class="course-block-wrapper" href="https://alison.com/courses/elderly-care-and-caring-for-the-disabled-revised/content#event=login" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          <span class="start_now_course_tile" title="Elderly Care and Caring for the Disabled">
+                                              <h5>Elderly Care and Caring for the Disabled</h5>
+                              
+                                              <span class="publisher">
+                                                      Advance Learning
+                                              </span>
+                              
+                                              <div class="course-intro">In this course learn how to treat people suffering from various mental and physical health conditions, as a result of ag...</div>
+                                          </span>
+                                      </a>
+                              
+                                      <a class="course-block-wrapper more-info" href="https://alison.com/course/elderly-care-and-caring-for-the-disabled-revised" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          More Information
+                                      </a>
+                                  </div>
+                                  </div>
+  
+                                  <div class="mx-auto">
+                                    <a href="#" class="btn pb-2 mx-auto text-center btn-primary">Start Now</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <span class="badge bg-dark">Certificate</span>
+                                  <span class="badge bg-danger">health</span>
+  
+                                  
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  <div class="card-info">
+                                    <div class="course-block-intro">
+                                      <div class="link-group share-outer course-block-share" data-id="1611" data-type="course" style="height: auto;">
+                                          <span class="btn-facebook" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></span>
+                                          <span class="btn-twitter" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter"></i></span>
+                                          <span class="btn-linkedin" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></span>
+                                      </div>
+                                      <!-- END .link-group -->
+                              
+                                      <a class="course-block-wrapper" href="https://alison.com/courses/elderly-care-and-caring-for-the-disabled-revised/content#event=login" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          <span class="start_now_course_tile" title="Elderly Care and Caring for the Disabled">
+                                              <h5>Elderly Care and Caring for the Disabled</h5>
+                              
+                                              <span class="publisher">
+                                                      Advance Learning
+                                              </span>
+                              
+                                              <div class="course-intro">In this course learn how to treat people suffering from various mental and physical health conditions, as a result of ag...</div>
+                                          </span>
+                                      </a>
+                              
+                                      <a class="course-block-wrapper more-info" href="https://alison.com/course/elderly-care-and-caring-for-the-disabled-revised" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          More Information
+                                      </a>
+                                  </div>
+                                  </div>
+  
+                                  <div class="mx-auto">
+                                    <a href="#" class="btn pb-2 mx-auto text-center btn-primary">Start Now</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <span class="badge bg-dark">Certificate</span>
+                                  <span class="badge bg-danger">health</span>
+  
+                                  
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  <div class="card-info">
+                                    <div class="course-block-intro">
+                                      <div class="link-group share-outer course-block-share" data-id="1611" data-type="course" style="height: auto;">
+                                          <span class="btn-facebook" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></span>
+                                          <span class="btn-twitter" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter"></i></span>
+                                          <span class="btn-linkedin" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></span>
+                                      </div>
+                                      <!-- END .link-group -->
+                              
+                                      <a class="course-block-wrapper" href="https://alison.com/courses/elderly-care-and-caring-for-the-disabled-revised/content#event=login" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          <span class="start_now_course_tile" title="Elderly Care and Caring for the Disabled">
+                                              <h5>Elderly Care and Caring for the Disabled</h5>
+                              
+                                              <span class="publisher">
+                                                      Advance Learning
+                                              </span>
+                              
+                                              <div class="course-intro">In this course learn how to treat people suffering from various mental and physical health conditions, as a result of ag...</div>
+                                          </span>
+                                      </a>
+                              
+                                      <a class="course-block-wrapper more-info" href="https://alison.com/course/elderly-care-and-caring-for-the-disabled-revised" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          More Information
+                                      </a>
+                                  </div>
+                                  </div>
+  
+                                  <div class="mx-auto">
+                                    <a href="#" class="btn pb-2 mx-auto text-center btn-primary">Start Now</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <span class="badge bg-dark">Certificate</span>
+                                  <span class="badge bg-danger">health</span>
+  
+                                  
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  <div class="card-info">
+                                    <div class="course-block-intro">
+                                      <div class="link-group share-outer course-block-share" data-id="1611" data-type="course" style="height: auto;">
+                                          <span class="btn-facebook" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook-f"></i></span>
+                                          <span class="btn-twitter" target="_blank" rel="nofollow"><i class="fa-brands fa-twitter"></i></span>
+                                          <span class="btn-linkedin" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></span>
+                                      </div>
+                                      <!-- END .link-group -->
+                              
+                                      <a class="course-block-wrapper" href="https://alison.com/courses/elderly-care-and-caring-for-the-disabled-revised/content#event=login" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          <span class="start_now_course_tile" title="Elderly Care and Caring for the Disabled">
+                                              <h5>Elderly Care and Caring for the Disabled</h5>
+                              
+                                              <span class="publisher">
+                                                      Advance Learning
+                                              </span>
+                              
+                                              <div class="course-intro">In this course learn how to treat people suffering from various mental and physical health conditions, as a result of ag...</div>
+                                          </span>
+                                      </a>
+                              
+                                      <a class="course-block-wrapper more-info" href="https://alison.com/course/elderly-care-and-caring-for-the-disabled-revised" title="Free Online Elderly Care and Caring for the Disabled Course">
+                                          More Information
+                                      </a>
+                                  </div>
+                                  </div>
+  
+                                  <div class="mx-auto">
+                                    <a href="#" class="btn pb-2 mx-auto text-center btn-primary">Start Now</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>                
+                          </div>
+                          
+                            
+                            
+                          </div>
+                  </div>
+           </div>
+       </section>
+       <!-- carrier -->
+       <section class="similar-course">
+           <div class="container">                     
+                  <div class="similar-box">
+                      <div class="course-tabs-header p-2">
+                          <h3> Careers</h3>                      
+                         </div>
+                      <div class="row mx-auto">
+                          <div class="my-slide me-1">
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                   
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                 
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 course-card">
+                              <div class="card  my-5">
+                                <img src="img/alison_courseware_intro_1611.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">                               
+                                  <p class="card-text">Elderly Care and Caring for the Disabled</p>                                   
+                                </div>
+                              </div>
+                            </div>                
+                          </div>
+                          </div>
+                  </div>
+           </div>
+       </section>
+       <!-- Course Reviews -->
+       <section class="course-reviews">
+           <div class="container">
+              <div class="course-review-box">
+                  <div class="course-tabs-header p-2">
+                      <h3> Course Reviews</h3>                      
+                     </div>
+                  <div class="p-3">
+                      <div class="user-comment">
+                          <table>
+                              <tbody><tr>
+                                  <td class="user-comment-image">
+                                      <div class="image-container">
+                                          <img width="70px" height="70px" class=" ls-is-cached lazyloaded" data-src="https://alison.com/images/users/default/21987791.jpg" alt="Abigail N." src="https://alison.com/images/users/default/21987791.jpg">
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <div class="name-ratings">
+                                          <div class="flag">
+                                              <img width="20px" height="15px" class=" lazyloaded" data-src="https://cdn01.alison-static.net/country_flags/ZA.png" alt="ZA" src="https://cdn01.alison-static.net/country_flags/ZA.png">
+                                              </div>
+                                          <div class="firstname">Abigail N.</div>
+                                          <div class="stars-container">
+                                              <div class="star-overlay"></div>
+                                              <div class="stars rating" data-fill="0">
+                                                  <span data-line="I did not like it!" class="icon-star init"></span>
+                                                  <span data-line="It was okay!" class="icon-star init"></span>
+                                                  <span data-line="Much Liked!" class="icon-star init"></span>
+                                                  <span data-line="Very Enjoyable!" class="icon-star init"></span>
+                                                  <span data-line="Highly Recommended!" class="icon-star init"></span>
+                                              </div>
+                                          </div>
+                                          <div class="helpful-comment">
+                                              <span class="like-comments-widget" data-id="719977">
+                                                      <a class="thumb-up me-2" href="#">
+                                                          <i class="fa-solid fa-thumbs-up"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                      <a class="thumb-down" href="#">
+                                                          <i class="fa-solid fa-thumbs-down"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                  </span>
+                                              </div>
+                                          </div>
+                                          <!-- END .name-ratings -->
+                                          <div class="body">
+                                              <p>Great platform to learning..... </p>
+                                          </div>
+                                      </td>
+                                  </tr>
+                          </tbody></table>
+                      </div>
+                      <div class="user-comment">
+                          <table>
+                              <tbody><tr>
+                                  <td class="user-comment-image">
+                                      <div class="image-container">
+                                          <img width="70px" height="70px" class=" ls-is-cached lazyloaded" data-src="https://alison.com/images/users/default/21987791.jpg" alt="Abigail N." src="https://alison.com/images/users/default/21987791.jpg">
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <div class="name-ratings">
+                                          <div class="flag">
+                                              <img width="20px" height="15px" class=" lazyloaded" data-src="https://cdn01.alison-static.net/country_flags/ZA.png" alt="ZA" src="https://cdn01.alison-static.net/country_flags/ZA.png">
+                                              </div>
+                                          <div class="firstname">Abigail N.</div>
+                                          <div class="stars-container">
+                                              <div class="star-overlay"></div>
+                                              <div class="stars rating" data-fill="0">
+                                                  <span data-line="I did not like it!" class="icon-star init"></span>
+                                                  <span data-line="It was okay!" class="icon-star init"></span>
+                                                  <span data-line="Much Liked!" class="icon-star init"></span>
+                                                  <span data-line="Very Enjoyable!" class="icon-star init"></span>
+                                                  <span data-line="Highly Recommended!" class="icon-star init"></span>
+                                              </div>
+                                          </div>
+                                          <div class="helpful-comment">
+                                              <span class="like-comments-widget" data-id="719977">
+                                                      <a class="thumb-up me-2" href="#">
+                                                          <i class="fa-solid fa-thumbs-up"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                      <a class="thumb-down" href="#">
+                                                          <i class="fa-solid fa-thumbs-down"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                  </span>
+                                              </div>
+                                          </div>
+                                          <!-- END .name-ratings -->
+                                          <div class="body">
+                                              <p>Great platform to learning..... </p>
+                                          </div>
+                                      </td>
+                                  </tr>
+                          </tbody></table>
+                      </div>
+                      <div class="user-comment">
+                          <table>
+                              <tbody><tr>
+                                  <td class="user-comment-image">
+                                      <div class="image-container">
+                                          <img width="70px" height="70px" class=" ls-is-cached lazyloaded" data-src="https://alison.com/images/users/default/21987791.jpg" alt="Abigail N." src="https://alison.com/images/users/default/21987791.jpg">
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <div class="name-ratings">
+                                          <div class="flag">
+                                              <img width="20px" height="15px" class=" lazyloaded" data-src="https://cdn01.alison-static.net/country_flags/ZA.png" alt="ZA" src="https://cdn01.alison-static.net/country_flags/ZA.png">
+                                              </div>
+                                          <div class="firstname">Abigail N.</div>
+                                          <div class="stars-container">
+                                              <div class="star-overlay"></div>
+                                              <div class="stars rating" data-fill="0">
+                                                  <span data-line="I did not like it!" class="icon-star init"></span>
+                                                  <span data-line="It was okay!" class="icon-star init"></span>
+                                                  <span data-line="Much Liked!" class="icon-star init"></span>
+                                                  <span data-line="Very Enjoyable!" class="icon-star init"></span>
+                                                  <span data-line="Highly Recommended!" class="icon-star init"></span>
+                                              </div>
+                                          </div>
+                                          <div class="helpful-comment">
+                                              <span class="like-comments-widget" data-id="719977">
+                                                      <a class="thumb-up me-2" href="#">
+                                                          <i class="fa-solid fa-thumbs-up"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                      <a class="thumb-down" href="#">
+                                                          <i class="fa-solid fa-thumbs-down"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                  </span>
+                                              </div>
+                                          </div>
+                                          <!-- END .name-ratings -->
+                                          <div class="body">
+                                              <p>Great platform to learning..... </p>
+                                          </div>
+                                      </td>
+                                  </tr>
+                          </tbody></table>
+                      </div>
+                      <div class="user-comment">
+                          <table>
+                              <tbody><tr>
+                                  <td class="user-comment-image">
+                                      <div class="image-container">
+                                          <img width="70px" height="70px" class=" ls-is-cached lazyloaded" data-src="https://alison.com/images/users/default/21987791.jpg" alt="Abigail N." src="https://alison.com/images/users/default/21987791.jpg">
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <div class="name-ratings">
+                                          <div class="flag">
+                                              <img width="20px" height="15px" class=" lazyloaded" data-src="https://cdn01.alison-static.net/country_flags/ZA.png" alt="ZA" src="https://cdn01.alison-static.net/country_flags/ZA.png">
+                                              </div>
+                                          <div class="firstname">Abigail N.</div>
+                                          <div class="stars-container">
+                                              <div class="star-overlay"></div>
+                                              <div class="stars rating" data-fill="0">
+                                                  <span data-line="I did not like it!" class="icon-star init"></span>
+                                                  <span data-line="It was okay!" class="icon-star init"></span>
+                                                  <span data-line="Much Liked!" class="icon-star init"></span>
+                                                  <span data-line="Very Enjoyable!" class="icon-star init"></span>
+                                                  <span data-line="Highly Recommended!" class="icon-star init"></span>
+                                              </div>
+                                          </div>
+                                          <div class="helpful-comment">
+                                              <span class="like-comments-widget" data-id="719977">
+                                                      <a class="thumb-up me-2" href="#">
+                                                          <i class="fa-solid fa-thumbs-up"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                      <a class="thumb-down" href="#">
+                                                          <i class="fa-solid fa-thumbs-down"></i>
+                                                          <label> 0</label>
+                                                      </a>
+                                                  </span>
+                                              </div>
+                                          </div>
+                                          <!-- END .name-ratings -->
+                                          <div class="body">
+                                              <p>Great platform to learning..... </p>
+                                          </div>
+                                      </td>
+                                  </tr>
+                          </tbody></table>
+                      </div>
+                      <div class="reviews-pagination justify-content-center mx-auto pagination" data-page="1" data-page-total="4"><span class="pagination__prev">&lt;</span><span class="active" data-page="1">1</span><span data-page="2">2</span><span data-page="3">3</span><span data-page="4">4</span><span class="pagination__next">&gt;</span></div>
+                      <div class="text-center">
+                          <a id="review_button" title="Login to leave a review mx-auto" href="https://alison.com/login" class="btn btn-blue all-reviews">
+                              Login to leave a review
+                              </a>
+                      </div>
+                  </div>
+              </div>
+           </div>
+       </section>
+           <!-- footer -->
+           <footer>
+              <div class="footer-bg">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-2">
+                      <div class="footer_h3">About Alison</div>
+                      <div class="footer-link">
+                        <ul>
+                          <li><a href="">Our Story</a></li>
+                          <li><a href="">Open Positions</a></li>
+                          <li><a href="">Alison Programmes</a></li>
+                          <li><a href="">Empower Us</a></li>
+                          <li><a href=""></a></li>
+                          <li><a href="">Our Publishers</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="">Hubs</a></li>
+                          <li><a href="">Index</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="footer_h3">About Alison</div>
+                      <div class="footer-link">
+                        <ul>
+                          <li><a href="">Our Story</a></li>
+                          <li><a href="">Open Positions</a></li>
+                          <li><a href="">Alison Programmes</a></li>
+                          <li><a href="">Empower Us</a></li>
+                          <li><a href=""></a></li>
+                          <li><a href="">Our Publishers</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="">Hubs</a></li>
+                          <li><a href="">Index</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="footer_h3">About Alison</div>
+                      <div class="footer-link">
+                        <ul>
+                          <li><a href="">Our Story</a></li>
+                          <li><a href="">Open Positions</a></li>
+                          <li><a href="">Alison Programmes</a></li>
+                          <li><a href="">Empower Us</a></li>
+                          <li><a href=""></a></li>
+                          <li><a href="">Our Publishers</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="">Hubs</a></li>
+                          <li><a href="">Index</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="footer_h3">About Alison</div>
+                      <div class="footer-link">
+                        <ul>
+                          <li><a href="">Our Story</a></li>
+                          <li><a href="">Open Positions</a></li>
+                          <li><a href="">Alison Programmes</a></li>
+                          <li><a href="">Empower Us</a></li>
+                          <li><a href=""></a></li>
+                          <li><a href="">Our Publishers</a></li>
+                          <li><a href="">Blog</a></li>
+                          <li><a href="">Hubs</a></li>
+                          <li><a href="">Index</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="footer_h3">About Alison</div>
+                      <div class="footer-link">
+                        <ul>
+                          <li><a href=""><i class="fa-brands fa-facebook-f me-1"></i> Our Story</a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter me-1"></i>Open Positions</a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter me-1"></i>Alison Programmes</a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter me-1"></i>Empower Us</a></li>
+                          <li><a href=""></a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter me-1"></i>Our Publishers</a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter me-1"></i>Blog</a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter me-1"></i>Hubs</a></li>
+                          <li><a href=""><i class="fa-brands fa-twitter me-1"></i>Index</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="wrap-bottom">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="w-bottom">
+                        <img src="img/logo (1).svg" alt="">
+                        <a href="">Alison 2020 </a>
+                        <a href="">Alison 2020 </a>
+                        <a href="">Alison 2020 </a>
+                        <a href="">Alison 2020 </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </footer>
+    </main>
+      
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+      <!-- slick js cdn -->
+      <script src="js/slick.min.js"></script>
+     <!-- slider script -->
+     <script>
+        $(document).ready(function(){
+          $('.my-slide').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerPadding: '50px',
+                dots: true        
+              }
+            }  
+          ]
+      });
+  });
+       </script>
+</body>
+</html>
